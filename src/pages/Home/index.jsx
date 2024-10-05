@@ -1,5 +1,6 @@
 import EcoSolutions from "./components/ecoSolutions"
 import Hero from "./components/hero"
+import Missions from "./components/missions"
 
 const Home = () => {
   return (
@@ -7,6 +8,7 @@ const Home = () => {
 
      <Hero/>
      <EcoSolutions/>
+     <Missions/>
     </div>
   )
 }
