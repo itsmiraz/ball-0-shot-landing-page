@@ -1,9 +1,10 @@
+import Hero from "./components/hero"
 
 const Home = () => {
   return (
     <div>
 
-        <h1 className="text-xl font-bold text-red-600">Home</h1>
+     <Hero/>
     </div>
   )
 }
