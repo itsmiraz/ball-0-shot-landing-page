@@ -1,3 +1,4 @@
+import EcoSolutions from "./components/ecoSolutions"
 import Hero from "./components/hero"
 
 const Home = () => {
@@ -5,6 +6,7 @@ const Home = () => {
     <div>
 
      <Hero/>
+     <EcoSolutions/>
     </div>
   )
 }

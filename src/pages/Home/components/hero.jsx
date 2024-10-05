@@ -27,11 +27,11 @@ const Hero = () => {
 
       <img className="mx-auto" src={heroBallImage} alt="hero-image" />
 
-      <div className="px-20 py-[35px] absolute bottom-0 bg-[#FFFFFFB2] border-[#FFFFFF] backdrop-blur-sm">
+      <div className="px-20 transform w-full left-1/2 -translate-x-1/2 py-[35px] absolute bottom-0 bg-[#FFFFFFB2] border-[#FFFFFF] backdrop-blur-sm">
         <ul className="flex justify-between items-center">
           {expertise.map((item, i) => (
             <li key={i} className=" flex items-center">
-              <p className="text-[28px] font-medium leading-[35px]">{item}</p>
+              <p className="text-[16px] md:text-[18px] xl:text-[28px] whitespace-nowrap font-medium leading-[35px]">{item}</p>
               <div>
                 {" "}
                 {i + 1 < expertise.length && (
