@@ -4,6 +4,7 @@ import Hero from "./components/hero"
 import History from "./components/history"
 import Missions from "./components/missions"
 import NotJustWater from '../../assets/icons/notjustWater.svg'
+import CTA from "./components/cta"
 const Home = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Home = () => {
      <Missions/>
      <History/>
      <Clients/>
+     <CTA/>
     </div>
   )
 }
