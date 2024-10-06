@@ -10,7 +10,7 @@ import Awards from "./components/awards";
 const Home = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero />
       <EcoSolutions />
       <BeyondWater />
       <Missions />
@@ -18,7 +18,7 @@ const Home = () => {
       <Occasion />
       <Awards/>
       <Clients />
-      <CTA />
+      <CTA /> */}
     </div>
   );
 };

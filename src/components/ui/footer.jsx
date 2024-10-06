@@ -31,16 +31,16 @@ const Footer = () => {
     <div className="pt-[48px] pb-[34px]">
       <img src={logo} className="max-w-[130px] mx-auto" alt="" />
 
-      <div className="flex gap-x-[48px] justify-center items-center pt-[33px] pb-[37px]">
+      <div className="flex gap-x-[35px] md:gap-x-[48px] justify-center items-center pt-[33px] pb-[37px]">
         {navLinks.map((item, i) => (
           <Link to={item.link} key={i}>
             {" "}
-            <p className="text-[18px] text-[#2B2B2B]">{item.label}</p>{" "}
+            <p className="text-[16px] font-bold md:text-[18px] text-[#2B2B2B]">{item.label}</p>{" "}
           </Link>
         ))}
       </div>
 
-      <div className="flex pb-[39px] gap-x-[27px] justify-center items-center">
+      <div className="flex flex-wrap pb-[39px] gap-y-[20px] gap-x-[27px] justify-center items-center">
         {Details.map((item, i) => (
           <div key={i} className="flex gap-x-[13px]">
             {" "}
