@@ -6,6 +6,7 @@ import Missions from "./components/missions";
 import CTA from "./components/cta";
 import BeyondWater from "./components/beyondWater";
 import Occasion from "./components/Occasion";
+import Awards from "./components/awards";
 const Home = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const Home = () => {
       <Missions />
       <History />
       <Occasion />
+      <Awards/>
       <Clients />
       <CTA />
     </div>

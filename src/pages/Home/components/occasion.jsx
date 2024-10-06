@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import BackgroundImage from "../../../assets/images/project-occassion-bg.webp";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -59,8 +59,9 @@ const Occasion = () => {
           nextEl: ".right-arrow",
           prevEl: ".left-arrow",
         }}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination,Navigation]}
         loop={true}
+        
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -101,7 +102,7 @@ export default Occasion;
 
 const OccasionCard = ({ data }) => {
   return (
-    <div className="p-3 rounded-[16px] h-[457px] bg-[#FFFFFF] w-[400px]">
+    <div className="p-3 cursor-pointer rounded-[16px] h-[457px] bg-[#FFFFFF] w-[400px]">
       <div>
         <img src={data.img} alt="image" />
       </div>

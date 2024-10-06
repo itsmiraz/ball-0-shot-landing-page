@@ -5,7 +5,32 @@ import ski from '../assets/images/projectoccassion/ski-resort.png'
 import festival from '../assets/images/projectoccassion/festival.png'
 import sports from '../assets/images/projectoccassion/sports.png'
 
+import award1 from '../assets/images/awards/award-1.png'
+import award2 from '../assets/images/awards/award-2.png'
+import award3 from '../assets/images/awards/award-3.png'
 
+
+
+export const AwardContent = [
+    {
+        img:award1,
+        title:'Certificate Earned',
+        desc:"We Took Advantage For Every Event That More Need A Ball O shot",
+        code:"X2342435354353"
+    },
+    {
+        img:award2,
+        title:'Certificate Earned',
+        desc:"We Took Advantage For Every Event That More Need A Ball O shot",
+        code:"X2342435354353"
+    },
+    {
+        img:award3,
+        title:'Certificate Earned',
+        desc:"We Took Advantage For Every Event That More Need A Ball O shot",
+        code:"X2342435354353"
+    },
+]
 
 
 
