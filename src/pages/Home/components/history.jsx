@@ -6,11 +6,10 @@ import inceptionImage from "../../../assets/images/Inception.webp";
 import researchImage from "../../../assets/images/Research.webp";
 import refineMent from "../../../assets/images/Refinement.webp";
 
-import Line from "../../../assets/icons/line.svg";
 import LB from "../../../components/ui/lineBreak";
 const History = () => {
   return (
-    <div>
+    <div className="pt-[65px] pb-[126px]">
       <h2 className="text-[40px] font-bold text-[#323232] text-center">
         Our Ball-O-Shot History
       </h2>
@@ -18,12 +17,16 @@ const History = () => {
         Our Commitment To Ensure Enviromental Green Safe
       </p>
 
-      <div className="py-[88px] max-w-[1265px] mx-auto flex justify-center gap-x-[74px]">
+      <div className="pt-[88px] max-w-[1265px] mx-auto flex justify-center gap-x-[74px]">
         {/* left section */}
         <div className="w-fit">
           {/* inception Image */}
           <div>
-            <img className="max-w-[415px]" src={inceptionImage} alt="inception-image" />
+            <img
+              className="max-w-[415px]"
+              src={inceptionImage}
+              alt="inception-image"
+            />
           </div>
 
           {/* Research Text */}
@@ -32,20 +35,23 @@ const History = () => {
               Research and Development
             </h2>
             <p className="text-[24px] pt-[17px]">
-              Extensive research and testing were  <LB/>  carried out to bring the idea
-              to life  <LB/>  and ensure it met the highest  <LB/>  standards.
+              Extensive research and testing were <LB /> carried out to bring
+              the idea to life <LB /> and ensure it met the highest <LB />{" "}
+              standards.
             </p>
           </div>
           {/* refinement image */}
           <div>
-            <img className="max-w-[415px]"  src={refineMent} alt="refinement-image" />
+            <img
+              className="max-w-[415px]"
+              src={refineMent}
+              alt="refinement-image"
+            />
           </div>
         </div>
         {/* mid line */}
         <div className="h-[658px] relative w-[70px] flex justify-center items-center">
-        <div className="w-[7px] bg-[#474747] h-full">
-      
-        </div>
+          <div className="w-[7px] bg-[#474747] h-full"></div>
           <img
             className="absolute min-w-[70px] top-0 transform -translate-x-1/2 left-1/2"
             src={step1}
@@ -71,13 +77,18 @@ const History = () => {
               Inception (Summer 2022)
             </h2>
             <p className="text-[24px] pt-[17px]">
-              The concept of Ball-O-Shot was <LB/> born in the summer of 2022, marking  <LB/> 
+              The concept of Ball-O-Shot was <LB /> born in the summer of 2022,
+              marking <LB />
               the beginning of an exciting journey.
             </p>
           </div>
           {/* inception Image */}
           <div className="pt-[157px] pb-[70px]">
-            <img className="max-w-[415px]"  src={researchImage} alt="inception-image" />
+            <img
+              className="max-w-[415px]"
+              src={researchImage}
+              alt="inception-image"
+            />
           </div>
 
           {/* Research Text */}
@@ -86,9 +97,10 @@ const History = () => {
               Refinement and Perfection
             </h2>
             <p className="text-[24px] pt-[17px]">
-              After months of research  <LB/>  and development, we achieved a  <LB/>  prototype
-              solid enough for   <LB/>  commercial use, paving the way  <LB/>  for Ball-O-Shot’s
-              successful market  <LB/>  introduction
+              After months of research <LB /> and development, we achieved a{" "}
+              <LB /> prototype solid enough for <LB /> commercial use, paving
+              the way <LB /> for Ball-O-Shot’s successful market <LB />{" "}
+              introduction
             </p>
           </div>
         </div>
