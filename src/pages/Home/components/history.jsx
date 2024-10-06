@@ -7,6 +7,8 @@ import researchImage from "../../../assets/images/Research.webp";
 import refineMent from "../../../assets/images/Refinement.webp";
 
 import LB from "../../../components/ui/lineBreak";
+
+
 const History = () => {
   return (
     <div className="pt-[65px] pb-[126px]">
