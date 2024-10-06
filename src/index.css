@@ -14,3 +14,8 @@ body {
 
   box-shadow: 3px 3px 6.6px 0px #ffffff40 inset;
 }
+
+.gradient-text{
+  background: linear-gradient(270.82deg, #131313 0.21%, #565656 99.79%);
+
+}

@@ -3,7 +3,6 @@ import EcoSolutions from "./components/ecoSolutions"
 import Hero from "./components/hero"
 import History from "./components/history"
 import Missions from "./components/missions"
-import NotJustWater from '../../assets/icons/notjustWater.svg'
 import CTA from "./components/cta"
 const Home = () => {
   return (
@@ -11,7 +10,6 @@ const Home = () => {
 
      <Hero/>
      <EcoSolutions/>
-     <NotJustWater/>
      <Missions/>
      <History/>
      <Clients/>
