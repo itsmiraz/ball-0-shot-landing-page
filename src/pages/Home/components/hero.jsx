@@ -1,7 +1,7 @@
 import heroBallImage from "../../../assets/images/hero-ball-image.webp";
 import GrayDot from "../../../assets/icons/grayDot.svg";
 import GofundMe from "../../../assets/icons/goFundme.svg";
-import LB from "../../../components/ui/lineBreak";
+// import LB from "../../../components/ui/lineBreak";
 import MobileHeroBall from '../../../assets/images/hero-mobile-drop.webp'
 const Hero = () => {
   const expertise = [
