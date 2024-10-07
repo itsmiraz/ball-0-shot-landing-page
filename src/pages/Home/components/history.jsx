@@ -130,7 +130,7 @@ const History = () => {
           </div>
         </div>
       </div>
-      <div className="flex pt-[40px] px-[10px] gap-x-[14px] ">
+      <div className="flex md:hidden block pt-[40px] px-[10px] gap-x-[14px] ">
         <div className="h-[740px] relative w-[47px] flex justify-center items-center">
           {/* step */}
           <div className="w-[4px] bg-[#474747] h-full"></div>

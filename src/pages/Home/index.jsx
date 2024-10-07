@@ -15,8 +15,8 @@ const Home = () => {
     <BeyondWater />
        <Missions />
        <History />
-      {/* <Occasion />
-      <Awards/>
+      <Occasion />
+      {/* <Awards/>
       <Clients />
       <CTA /> */}
     </div>
