@@ -11,8 +11,8 @@ const Home = () => {
   return (
     <div>
      <Hero />
-      {/*  <EcoSolutions />
-      <BeyondWater />
+       <EcoSolutions />
+      {/* <BeyondWater />
       <Missions />
       <History />
       <Occasion />
