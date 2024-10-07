@@ -40,10 +40,10 @@ const Awards = () => {
           </p>
         </div>
         <div className="flex md:pt-0 pt-[32px] gap-x-6 items-center">
-          <button  className="md:w-[57px] w-[40px]" onClick={handleLeftClick}>
+          <button className="md:w-[57px] w-[40px]" onClick={handleLeftClick}>
             <LeftArrow />
           </button>
-          <button  className="md:w-[57px] w-[40px]" onClick={handleRightClick}>
+          <button className="md:w-[57px] w-[40px]" onClick={handleRightClick}>
             <RightArrow />
           </button>
         </div>
@@ -63,7 +63,7 @@ const Awards = () => {
             prevEl: ".left-arrow",
           }}
           modules={[Pagination, Navigation]}
-        //   loop={true}
+          //   loop={true}
           breakpoints={{
             400: {
               slidesPerView: 1.2,
@@ -74,23 +74,23 @@ const Awards = () => {
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 1.2,
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 2.2,
+              slidesPerView: 1.4,
               spaceBetween: 20,
             },
-            1220: {
-              slidesPerView: 2.3,
-              spaceBetween: 20,
-            },
-            1300: {
-              slidesPerView: 2.1,
+            1200: {
+              slidesPerView: 2,
               spaceBetween: 20,
             },
             1400: {
-              slidesPerView: 2.5,
+              slidesPerView: 2.2,
+              spaceBetween: 20,
+            },
+            1600: {
+              slidesPerView: 2.7,
               spaceBetween: 20,
             },
           }}
@@ -115,9 +115,13 @@ const AwardCard = ({ data }) => {
         <img className="md:max-w-fit max-w-[123px]" src={data.img} alt="" />
       </div>
       <div>
-        <h2 className="text-[#282828] text-[18px] md:text-[36px] font-bold">{data.title}</h2>
+        <h2 className="text-[#282828] text-[18px] md:text-[36px] font-bold">
+          {data.title}
+        </h2>
         <p className="text-[12px] md:text-[24px]">{data.desc}</p>
-        <p className="pt-[19px] md:pt-[39px] text-[12px] md:text-[24px]">{data.code}</p>
+        <p className="pt-[19px] md:pt-[39px] text-[12px] md:text-[24px]">
+          {data.code}
+        </p>
       </div>
     </div>
   );

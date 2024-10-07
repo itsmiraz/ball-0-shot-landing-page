@@ -37,7 +37,7 @@ const BeyondWater = () => {
         <img className="mx-auto max-w-[635px]" src={centerBubble} alt="" />
       </div>
 
-      <img src={CenterBubblesMobile} alt="" />
+      <img className="md:hidden block" src={CenterBubblesMobile} alt="" />
       <div className="px-[20px]">
         <h2 className="text-[#323232] pt-10 font-bold text-[24px] md:text-[40px] text-center pb-[13px]">
           Not just water
