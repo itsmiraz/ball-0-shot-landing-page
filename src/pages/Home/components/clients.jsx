@@ -15,18 +15,18 @@ const Clients = () => {
   const clientsRow2 = [image6, image7, image8, image9];
 
   return (
-    <div className="py-[58px]">
-      <h2 className="text-[36px] font-bold text-[#282828] text-center leading-[45px]">Our Best Client</h2>
-      <p className="text-[24px] text-center">We Work With Many Instituotion And Coorporate</p>
+    <div className="py-[40px] md:py-[58px]">
+      <h2 className="text-[24px] md:text-[36px] font-bold text-[#282828] text-center leading-[45px]">Our Best Client</h2>
+      <p className="text-[16px] md:text-[24px] text-center">We Work With Many Instituotion And Coorporate</p>
       <div className="space-y-[65px] pt-[59px]">
-        <div className="flex justify-center items-center gap-x-[37px]">
+        <div className="flex justify-center items-center gap-x-[18px] md:gap-x-[37px]">
         {clientsRow1.map((item, i) => (
-          <img src={item} key={i} />
+          <img className="md:max-w-fit max-w-[79px] md:max-h-fit max-h-[41px]" src={item} key={i} />
         ))}
         </div>
-       <div className="flex justify-center items-center gap-x-[93px]">
+       <div className="flex justify-center items-center gap-x-[33px] md:gap-x-[93px]">
        {clientsRow2.map((item, i) => (
-          <img src={item} key={i} />
+          <img className="md:max-w-fit max-w-[79px] md:max-h-fit max-h-[41px]" src={item} key={i} />
         ))}
        </div>
       </div>

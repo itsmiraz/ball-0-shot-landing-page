@@ -27,29 +27,29 @@ const Awards = () => {
   };
   return (
     <div id="award" className="py-[72px]">
-      <div className="flex justify-between px-10">
+      <div className="flex md:flex-row flex-col justify-between px-[22px] md:px-10">
         <div>
-          <h2 className="text-[#493D14] text-[36px] font-bold">
+          <h2 className="text-[#493D14] text-[24px] md:text-[36px] font-bold">
             Certificate Earned
           </h2>
-          <p className="text-[24px] ">
+          <p className="text-[16px] md:pt-0 pt-[21px] md:text-[24px] ">
             {" "}
             We have proudly participated in multiple entrepreneurship contests{" "}
             <LB /> and won numerous awards, showcasing the innovation behind
             Ball-O-Shot.
           </p>
         </div>
-        <div className="flex gap-x-6 items-center">
-          <button onClick={handleLeftClick}>
+        <div className="flex md:pt-0 pt-[32px] gap-x-6 items-center">
+          <button  className="md:w-[57px] w-[40px]" onClick={handleLeftClick}>
             <LeftArrow />
           </button>
-          <button onClick={handleRightClick}>
+          <button  className="md:w-[57px] w-[40px]" onClick={handleRightClick}>
             <RightArrow />
           </button>
         </div>
       </div>
 
-      <div className="pl-10 pt-[55px] ">
+      <div className="pl-[22px] md:pl-10 pt-[55px] ">
         <Swiper
           ref={swiperRef}
           pagination={{
@@ -65,6 +65,10 @@ const Awards = () => {
           modules={[Pagination, Navigation]}
         //   loop={true}
           breakpoints={{
+            400: {
+              slidesPerView: 1.2,
+              spaceBetween: 20,
+            },
             640: {
               slidesPerView: 1,
               spaceBetween: 20,
@@ -74,8 +78,20 @@ const Awards = () => {
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 2.7,
-              spaceBetween: 3,
+              slidesPerView: 2.2,
+              spaceBetween: 20,
+            },
+            1220: {
+              slidesPerView: 2.3,
+              spaceBetween: 20,
+            },
+            1300: {
+              slidesPerView: 2.1,
+              spaceBetween: 20,
+            },
+            1400: {
+              slidesPerView: 2.5,
+              spaceBetween: 20,
             },
           }}
           className="mySwiper "
@@ -94,14 +110,14 @@ const Awards = () => {
 export default Awards;
 const AwardCard = ({ data }) => {
   return (
-    <div className="bg-[#F8F8F8] cursor-pointer rounded-[20px] pt-[53px] pb-[40px] px-[30px] w-[616px]">
+    <div className="bg-[#F8F8F8] cursor-pointer rounded-[20px] pt-[26px] md:pt-[53px] pb-[20px] md:pb-[40px] px-[15px] md:px-[30px] w-[308px] md:w-[616px]">
       <div>
-        <img src={data.img} alt="" />
+        <img className="md:max-w-fit max-w-[123px]" src={data.img} alt="" />
       </div>
       <div>
-        <h2 className="text-[#282828] text-[36px] font-bold">{data.title}</h2>
-        <p className="text-[24px]">{data.desc}</p>
-        <p className="pt-[39px] text-[24px]">{data.code}</p>
+        <h2 className="text-[#282828] text-[18px] md:text-[36px] font-bold">{data.title}</h2>
+        <p className="text-[12px] md:text-[24px]">{data.desc}</p>
+        <p className="pt-[19px] md:pt-[39px] text-[12px] md:text-[24px]">{data.code}</p>
       </div>
     </div>
   );
