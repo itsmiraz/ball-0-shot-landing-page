@@ -10,8 +10,8 @@ import Awards from "./components/awards";
 const Home = () => {
   return (
     <div>
-      {/* <Hero />
-      <EcoSolutions />
+     <Hero />
+      {/*  <EcoSolutions />
       <BeyondWater />
       <Missions />
       <History />
