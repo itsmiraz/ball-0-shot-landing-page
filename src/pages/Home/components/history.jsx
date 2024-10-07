@@ -8,18 +8,41 @@ import refineMent from "../../../assets/images/Refinement.webp";
 
 import LB from "../../../components/ui/lineBreak";
 
-
 const History = () => {
+  const sections = [
+    {
+      title: "Inception (Summer 2022)",
+      description:
+        "The concept of Ball-O-Shot was born in the summer of 2022, marking the beginning of an exciting journey.",
+      image: inceptionImage,
+      alt: "inception-image",
+    },
+    {
+      title: "Research and Development",
+      description:
+        "Extensive research and testing were carried out to bring the idea to life and ensure it met the highest standards.",
+      image: researchImage,
+      alt: "research-image",
+    },
+    {
+      title: "Refinement and Perfection",
+      description:
+        "After months of research and development, we achieved a prototype solid enough for commercial use, paving the way for Ball-O-Shot’s successful market introduction.",
+      image: refineMent,
+      alt: "refinement-image",
+    },
+  ];
   return (
     <div className="pt-[65px] pb-[126px]">
-      <h2 className="text-[40px] font-bold text-[#323232] text-center">
+      <h2 className="text-[28px] md:text-[40px] font-bold text-[#323232] text-center">
         Our Ball-O-Shot History
       </h2>
-      <p className="text-[24px] font-medium text-center text-[#8B8B8B]">
-        Our Commitment To Ensure Enviromental Green Safe
+      <p className="text-[18px] md:text-[24px] font-medium text-center text-[#8B8B8B]">
+        Our Commitment To Ensure <br className="md:hidden block" /> Enviromental
+        Green Safe
       </p>
 
-      <div className="pt-[88px] max-w-[1265px] mx-auto flex justify-center gap-x-[74px]">
+      <div className="pt-[88px]  hidden max-w-[1265px] mx-auto md:flex justify-center gap-x-[74px]">
         {/* left section */}
         <div className="w-fit">
           {/* inception Image */}
@@ -93,7 +116,7 @@ const History = () => {
             />
           </div>
 
-          {/* Research Text */}
+          {/* Refinement Text */}
           <div className="">
             <h2 className="text-[#131313] leading-[35px] font-bold text-[28px]">
               Refinement and Perfection
@@ -105,6 +128,49 @@ const History = () => {
               introduction
             </p>
           </div>
+        </div>
+      </div>
+      <div className="flex pt-[40px] px-[10px] gap-x-[14px] ">
+        <div className="h-[740px] relative w-[47px] flex justify-center items-center">
+          {/* step */}
+          <div className="w-[4px] bg-[#474747] h-full"></div>
+          <img
+            className="absolute min-w-[47px] top-0 transform -translate-x-1/2 left-1/2"
+            src={step1}
+            alt=""
+          />
+          <img
+            className="absolute min-w-[47px] top-1/2 -translate-y-1/2 transform  -translate-x-1/2 left-1/2"
+            src={step2}
+            alt=""
+          />
+          <img
+            className="absolute min-w-[47px] bottom-0 transform  -translate-x-1/2 left-1/2"
+            src={step3}
+            alt=""
+          />
+        </div>
+        <div className="space-y-[34px]">
+          {sections.map((section, index) => (
+            <div key={index}>
+              <img
+                className="max-w-[314px]"
+                src={section.image}
+                alt={section.alt}
+              />
+              <h2 className="text-[#131313] pt-[32px] leading-[26px] font-bold text-[20px]">
+                {section.title}
+              </h2>
+              <p className="text-[17px] max-w-[306px] pt-[17px]">
+                {section.description.split(" ").map((word, wordIndex) => (
+                  <span key={wordIndex}>
+                    {word}
+                    {wordIndex % 5 === 0 ? <LB /> : " "}
+                  </span>
+                ))}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

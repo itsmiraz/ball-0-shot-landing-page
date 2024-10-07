@@ -14,8 +14,8 @@ const Home = () => {
        <EcoSolutions />
     <BeyondWater />
        <Missions />
-       {/* <History />
-      <Occasion />
+       <History />
+      {/* <Occasion />
       <Awards/>
       <Clients />
       <CTA /> */}
