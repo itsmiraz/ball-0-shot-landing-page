@@ -19,7 +19,7 @@ const EcoSolutions = () => {
           of dietary preferences and lifestyles. It's a product designed with
           sustainability and health in mind, offering a responsible alternative.
         </p>
-        <button className="bg-[#303030]  button-inner-shadow items-center rounded-[9px]  py-[14px] md:py-5 text-[#FFFFFF] text-[15px] md:text-[20px] font-semibold w-[343px] leading-[25px] text-center">Learn More</button>
+        <button className="bg-[#303030] w-full button-inner-shadow items-center rounded-[9px]  py-[14px] md:py-5 text-[#FFFFFF] text-[15px] md:text-[20px] font-semibold md:w-[343px] leading-[25px] text-center">Learn More</button>
       </div>
       <div className="w-[100%] md:w-[50%]">
         <img className="w-full" src={explodedImage} alt="" />

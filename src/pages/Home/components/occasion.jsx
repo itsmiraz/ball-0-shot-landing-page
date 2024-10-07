@@ -62,6 +62,10 @@ const Occasion = () => {
           modules={[Pagination, Navigation]}
           loop={true}
           breakpoints={{
+            250: {
+              slidesPerView: 1.4,
+              spaceBetween: 10,
+            },
             400: {
               slidesPerView: 1.7,
               spaceBetween: 10,

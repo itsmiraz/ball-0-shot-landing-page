@@ -154,7 +154,7 @@ const History = () => {
           {sections.map((section, index) => (
             <div key={index}>
               <img
-                className="max-w-[314px]"
+                className=""
                 src={section.image}
                 alt={section.alt}
               />
