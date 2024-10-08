@@ -12,6 +12,10 @@ import OnsiteIcon from "../assets/icons/onSiteLogo.svg";
 import PartnerShipIcon from "../assets/icons/partnerShip.svg";
 import Opportunities from "../assets/icons/oppurtunitites.svg";
 
+import inceptionImage from '../assets/images/Inception.webp'
+import croudFunding from '../assets/images/croud-funding.webp'
+import charityEvent from '../assets/images/charity-event.webp'
+
 export const AwardContent = [
   {
     img: award1,
@@ -86,5 +90,28 @@ export const AboutExpertise = [
       "Partner with us for sponsorship opportunities that elevate your event and deliver unforgettable experiences.",
   }
 ]
+
+
+
+
+export const GalleryContent = [
+  {
+    image : inceptionImage,
+    title:'Party Event',
+    date:'24 September 2023',
+  },
+  {
+    image : croudFunding,
+    title:'Crowdfunding',
+    date:'24 September 2023',
+  },
+  {
+    image : charityEvent,
+    title:'Charity Event',
+    date:'24 September 2023',
+  },
+]
+
+
 
 
