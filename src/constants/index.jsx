@@ -12,9 +12,9 @@ import OnsiteIcon from "../assets/icons/onSiteLogo.svg";
 import PartnerShipIcon from "../assets/icons/partnerShip.svg";
 import Opportunities from "../assets/icons/oppurtunitites.svg";
 
-import inceptionImage from '../assets/images/Inception.webp'
-import croudFunding from '../assets/images/croud-funding.webp'
-import charityEvent from '../assets/images/charity-event.webp'
+import partyEvent from "../assets/images/party-event.webp";
+import croudFunding from "../assets/images/croud-funding.webp";
+import charityEvent from "../assets/images/charity-event.webp";
 
 export const AwardContent = [
   {
@@ -72,46 +72,70 @@ export const OccasionContent = [
 
 export const AboutExpertise = [
   {
-    icon:<OnsiteIcon/>,
+    icon: <OnsiteIcon />,
     title: "On-Site Presence",
     description:
       "Bring the excitement of Ball-O-Shot to your event and impress your guests with a unique beverage experience.",
   },
   {
-    icon: <PartnerShipIcon/>,
+    icon: <PartnerShipIcon />,
     title: "Long Term Partnership",
     description:
       "Looking to offer Ball-O-Shot permanently at your venue? We can make that happen.",
   },
   {
-    icon: <Opportunities/>,
+    icon: <Opportunities />,
     title: "Sponsor Opportunities",
     description:
       "Partner with us for sponsorship opportunities that elevate your event and deliver unforgettable experiences.",
-  }
-]
-
-
-
+  },
+];
 
 export const GalleryContent = [
   {
-    image : inceptionImage,
-    title:'Party Event',
-    date:'24 September 2023',
+    image: partyEvent,
+    title: "Party Event",
+    date: "24 September 2023",
   },
   {
-    image : croudFunding,
-    title:'Crowdfunding',
-    date:'24 September 2023',
+    image: croudFunding,
+    title: "Crowdfunding",
+    date: "24 September 2023",
   },
   {
-    image : charityEvent,
-    title:'Charity Event',
-    date:'24 September 2023',
+    image: charityEvent,
+    title: "Charity Event",
+    date: "24 September 2023",
   },
-]
+];
 
-
-
-
+export const TestimonialsData = [
+  {
+    name: "Sarah",
+    badge: "Lacrosse Player",
+    review:
+      "Laxtape is a game-changer! The enhanced grip it offers has greatly improved my ball control on the field. Highly recommend it!",
+    rating: 4,
+  },
+  {
+    name: "Jake",
+    badge: "Coach",
+    review:
+      "I've seen a noticeable improvement in my players' performance since switching to Laxtape. The extra grip and durability make it a top choice for us.",
+    rating: 5,
+  },
+  {
+    name: "Emily",
+    badge: "College Athlete",
+    review:
+      "Laxtape has been amazing for practice and games. It lasts long, feels great, and makes handling the stick much easier. Definitely a must-have!",
+    rating: 5,
+  },
+  {
+    name: "Ryan",
+    badge: "High School Lacrosse Player",
+    review:
+      "The grip I get with Laxtape is unbeatable. It's improved my game, especially during wet conditions. Love the product!",
+    rating: 4,
+  }
+];
