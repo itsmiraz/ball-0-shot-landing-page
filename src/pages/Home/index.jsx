@@ -6,10 +6,12 @@ import Missions from "./components/missions";
 import CTA from "./components/cta";
 import BeyondWater from "./components/beyondWater";
 import Awards from "./components/awards";
-import Occasion from "./components/Occasion";
+import Occasion from "./components/occasion";
+import Header from "./components/header";
 const Home = () => {
   return (
     <div>
+      <Header />
       <Hero />
       <EcoSolutions />
       <BeyondWater />

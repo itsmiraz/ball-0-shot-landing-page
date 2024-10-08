@@ -1,7 +1,8 @@
 import logo from "@/assets/logo/logo.png";
-import Menu from "../../assets/icons/menu.svg";
-import Close from "../../assets/icons/close.svg";
+import Menu from "../../../assets/icons/menu.svg";
+import Close from "../../../assets/icons/close.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [Show, setShow] = useState(false);
 
@@ -9,7 +10,9 @@ const Header = () => {
     <div className="flex md:flex-row flex-col justify-center items-center">
       <ul className=" hidden md:flex items-center justify-center gap-x-10 ">
         <li>
+          <Link to={'/about'}>
           <p className="text-[20px] leading-[25px]">About</p>
+          </Link>
         </li>
         <li>
           <p className="text-[20px] leading-[25px]">Specs</p>
@@ -51,7 +54,9 @@ const Header = () => {
         >
           <ul className="grid gap-[18px] w-full  pl-5 py-6 grid-cols-2 text-[14px] text-[#101828]">
             <li>
-              <p>About</p>
+             <Link to='/about'>
+             <p>About</p>
+             </Link>
             </li>
             <li>
               <p>Mission</p>
