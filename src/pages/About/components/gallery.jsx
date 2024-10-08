@@ -25,14 +25,14 @@ const Gallery = () => {
   };
   return (
     <div className="pt-[135px] pb-[96px] ">
-      <div className="flex justify-between px-20 items-center">
-        <h2 className="text-[40px] font-bold text-[#323232s]">Gallery</h2>
-        <div className="gap-x-[21px] flex items-center">
-          <button onClick={handleLeftClick}>
+      <div className="flex md:flex-row gap-[22px] flex-col justify-center md:justify-between md:px-20 items-center">
+        <h2 className="text-[24px] md:text-[40px] font-bold text-[#323232s]">Gallery</h2>
+        <div className="gap-x-[21px]  flex items-center">
+          <button  className="md:w-[80px] w-[34px]"  onClick={handleLeftClick}>
             <LeftArrow />
           </button>
 
-          <button onClick={handleRightClick}>
+          <button   className="md:w-[80px] w-[34px]" onClick={handleRightClick}>
             <RightArrow />
           </button>
         </div>
@@ -53,6 +53,10 @@ const Gallery = () => {
           modules={[Pagination, Navigation]}
           //   loop={true}
           breakpoints={{
+            350: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
             400: {
               slidesPerView: 1.2,
               spaceBetween: 20,
@@ -99,15 +103,15 @@ export default Gallery;
 
 const GalleryCard = ({ data }) => {
   return (
-    <div className="w-[508px]">
+    <div className="w-[320px] md:w-[508px]">
       <div>
         <img src={data.image} className="w-full md:h-[293px]" alt="" />
       </div>
-      <div className="pt-[36px]">
-        <h2 className="text-[#323232] text-[32px] leading-[40px] font-bold">
+      <div className="pt-[22px] md:pt-[36px]">
+        <h2 className="text-[#323232] text-[20px] md:text-[32px] leading-[40px] font-bold">
           {data.title}
         </h2>
-        <p className="text-[#323232] text-[28px]">{data.date}</p>
+        <p className="text-[#323232] text-[17px] md:text-[28px]">{data.date}</p>
       </div>
     </div>
   );

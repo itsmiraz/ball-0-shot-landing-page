@@ -1,3 +1,4 @@
+import CTA from "../Home/components/cta";
 import Expertise from "./components/expertise";
 import Gallery from "./components/gallery";
 import AboutHeader from "./components/header";
@@ -12,6 +13,7 @@ const About = () => {
       <Expertise />
       <Gallery />
       <Testimonials />
+      <CTA/>
     </div>
   );
 };

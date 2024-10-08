@@ -11,6 +11,9 @@ import award3 from "../assets/images/awards/award-3.png";
 import OnsiteIcon from "../assets/icons/onSiteLogo.svg";
 import PartnerShipIcon from "../assets/icons/partnerShip.svg";
 import Opportunities from "../assets/icons/oppurtunitites.svg";
+import SMOnsiteIcon from "../assets/icons/smOnsiteLogo.svg";
+import SMPartnerShipIcon from "../assets/icons/smPartnerShip.svg";
+import SMOpportunities from "../assets/icons/smOpputuniites.svg";
 
 import partyEvent from "../assets/images/party-event.webp";
 import croudFunding from "../assets/images/croud-funding.webp";
@@ -73,18 +76,23 @@ export const OccasionContent = [
 export const AboutExpertise = [
   {
     icon: <OnsiteIcon />,
+    smicon: <SMOnsiteIcon />,
     title: "On-Site Presence",
     description:
       "Bring the excitement of Ball-O-Shot to your event and impress your guests with a unique beverage experience.",
   },
   {
     icon: <PartnerShipIcon />,
+    smicon: <SMPartnerShipIcon />,
+  
     title: "Long Term Partnership",
     description:
       "Looking to offer Ball-O-Shot permanently at your venue? We can make that happen.",
   },
   {
     icon: <Opportunities />,
+    smicon: <SMOpportunities />,
+  
     title: "Sponsor Opportunities",
     description:
       "Partner with us for sponsorship opportunities that elevate your event and deliver unforgettable experiences.",
