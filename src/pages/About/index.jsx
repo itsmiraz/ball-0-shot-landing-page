@@ -1,3 +1,4 @@
+import { ScrollRestoration } from "react-router-dom";
 import CTA from "../Home/components/cta";
 import Expertise from "./components/expertise";
 import Gallery from "./components/gallery";
@@ -14,6 +15,7 @@ const About = () => {
       <Gallery />
       <Testimonials />
       <CTA/>
+      <ScrollRestoration/>
     </div>
   );
 };

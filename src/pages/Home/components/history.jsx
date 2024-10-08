@@ -33,7 +33,7 @@ const History = () => {
     },
   ];
   return (
-    <div className="pt-[65px] pb-[126px]">
+    <div id='history' className="pt-[65px] pb-[126px]">
       <h2 className="text-[28px] md:text-[40px] font-bold text-[#323232] text-center">
         Our Ball-O-Shot History
       </h2>
@@ -130,7 +130,7 @@ const History = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:hidden block pt-[40px] px-[10px] gap-x-[14px] ">
+      <div className="flex md:hidden  pt-[40px] px-[10px] gap-x-[14px] ">
         <div className="h-[740px] relative w-[47px] flex justify-center items-center">
           {/* step */}
           <div className="w-[4px] bg-[#474747] h-full"></div>

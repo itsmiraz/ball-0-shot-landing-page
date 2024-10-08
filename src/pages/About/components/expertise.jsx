@@ -2,7 +2,7 @@ import { AboutExpertise } from "../../../constants";
 
 const Expertise = () => {
   return (
-    <div className="pt-[89px] flex justify-center md:flex-row flex-col gap-x-[31px]">
+  <div id="service" className="pt-[89px] flex justify-center md:flex-row flex-col gap-x-[31px]">
       {AboutExpertise.map((item, i) => (
         <div
           className="bg-[#F8F8F8] md:size-[400px] rounded-[33px]  flex flex-col justify-center items-center pt-[72px] pb-[34px] px-5"

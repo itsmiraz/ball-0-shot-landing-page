@@ -8,6 +8,7 @@ import BeyondWater from "./components/beyondWater";
 import Awards from "./components/awards";
 import Occasion from "./components/occasion";
 import Header from "./components/header";
+import { ScrollRestoration } from "react-router-dom";
 const Home = () => {
   return (
     <div>
@@ -21,6 +22,7 @@ const Home = () => {
       <Awards />
       <Clients />
       <CTA />
+      <ScrollRestoration />
     </div>
   );
 };

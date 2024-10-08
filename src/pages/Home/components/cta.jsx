@@ -3,7 +3,7 @@ import team from '../../../assets/images/team.webp'
 import LB from '../../../components/ui/lineBreak'
 const CTA = () => {
   return (
-    <div className='pt-[65px]'>
+    <div id='cta' className='pt-[65px]'>
 
 
       <div className='px-3'>
@@ -13,7 +13,7 @@ const CTA = () => {
         <p className='text-[16px] md:text-[24px] pt-[16px] md:pt-[21px] pb-[25px] md:pb-[39px] text-center'>
         Join the revolution in beverage experiences with Ball-O-Shot! Whether you're hosting  a <LB/> music festival, a sports event, or a private party.
         </p>
-        <button className="bg-[#303030] text-center mx-auto button-inner-shadow h-[60px] md:h-[78px] items-center rounded-full px-[69px] py-[14px] md:py-5 text-[#FFFFFF]  text-[16px] md:text-[24px] font-semibold flex gap-2.5">
+        <button className="bg-[#303030] hover:bg-[#303030]/90 duration-200 ease-in-out transition-all  text-center mx-auto button-inner-shadow h-[60px] md:h-[78px] items-center rounded-full px-[69px] py-[14px] md:py-5 text-[#FFFFFF]  text-[16px] md:text-[24px] font-semibold flex gap-2.5">
         Call Us Now
         </button>
       </div>

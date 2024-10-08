@@ -2,7 +2,7 @@ import LB from "../../../components/ui/lineBreak"
 
 const Missions = () => {
   return (
-    <div className="pt-10 pb-[82px] px-[10px]"> 
+    <div id='mission' className="pt-10 pb-[82px] px-[10px]"> 
        <div className="text-center max-w-[1263px] mx-auto bg-[#4F4F4F] rounded-[20px] py-[46px] md:py-[61px] px-[22px] md:px-[53px]">
        <h2 className=" text-[24px] md:text-[40px] font-bold text-[#FFFFFF] pb-4">
         Our Mission

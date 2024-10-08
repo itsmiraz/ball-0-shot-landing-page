@@ -10,27 +10,43 @@ const Header = () => {
     <div className="flex md:flex-row flex-col justify-center items-center">
       <ul className=" hidden md:flex items-center justify-center gap-x-10 ">
         <li>
-          <Link to={'/about'}>
+          <Link to={'#about'}>
           <p className="text-[20px] leading-[25px]">About</p>
           </Link>
         </li>
         <li>
-          <p className="text-[20px] leading-[25px]">Specs</p>
+       <Link to={'#specs'}>
+       <p className="text-[20px] leading-[25px]">Specs</p>
+       </Link>
         </li>
         <li>
+       <Link to={'#mission'}>
           <p className="text-[20px] leading-[25px]">Mission</p>
+       </Link>
+
         </li>
         <li>
           <img className="max-w-[130px]" src={logo} alt="ball-0-shot-logo" />
         </li>
         <li>
+       <Link to={'#history'}>
+         
           <p className="text-[20px] leading-[25px]">History</p>
+       </Link>
         </li>
         <li>
+       <Link to={'#events'}>
+       
           <p className="text-[20px] leading-[25px]">Events</p>
+       </Link>
+         
         </li>
         <li>
+       <Link to={'#awards'}>
           <p className="text-[20px] leading-[25px]">Certificate</p>
+       
+       </Link>
+
         </li>
       </ul>
       <div className="md:hidden  block sticky top-0 w-full">

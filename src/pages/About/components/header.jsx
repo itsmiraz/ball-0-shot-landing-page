@@ -15,22 +15,32 @@ const AboutHeader = () => {
           </Link>
         </li>
         <li>
-          <p className="text-[20px] leading-[25px]">About</p>
+          <Link to={"/#about"}>
+            <p className="text-[20px] leading-[25px]">About</p>
+          </Link>
         </li>
         <li>
-          <p className="text-[20px] leading-[25px]">Contact</p>
+          <Link to={"#cta"}>
+            <p className="text-[20px] leading-[25px]">Contact</p>
+          </Link>
         </li>
         <li>
           <img className="max-w-[130px]" src={logo} alt="ball-0-shot-logo" />
         </li>
         <li>
-          <p className="text-[20px] leading-[25px]">Service</p>
+          <Link to={"#service"}>
+            <p className="text-[20px] leading-[25px]">Service</p>
+          </Link>
         </li>
         <li>
-          <p className="text-[20px] leading-[25px]">Client</p>
+          <Link to={"#testimonials"}>
+            <p className="text-[20px] leading-[25px]">Client</p>
+          </Link>
         </li>
         <li>
-          <p className="text-[20px] leading-[25px]">Award</p>
+          <Link to={"/#awards"} className="z-40 relative">
+            <p className="text-[20px]  leading-[25px]">Award</p>
+          </Link>
         </li>
       </ul>
       <div className="md:hidden  block sticky top-0 w-full">

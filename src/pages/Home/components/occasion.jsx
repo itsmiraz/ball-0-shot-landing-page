@@ -27,6 +27,7 @@ const Occasion = () => {
   };
   return (
     <div
+      id="events"
       style={{
         backgroundImage: `url(${BackgroundImage})`,
         backgroundSize: "cover", // Makes sure the image covers the entire area
@@ -42,7 +43,7 @@ const Occasion = () => {
         Delivering Sustainable, On-the-Go Refreshment for Any Occasion — Perfect
         for Festivals <LB /> , Sports, and Events Worldwide
       </p>
-      <button className="bg-[#303030] text-center mx-auto  button-inner-shadow h-[60px] md:h-[78px] items-center rounded-full px-[69px] py-5 text-[#FFFFFF] text-[16px] md:text-[24px] font-semibold flex gap-2.5">
+      <button className="bg-[#303030] hover:bg-[#303030]/90 duration-200 ease-in-out transition-all  text-center mx-auto  button-inner-shadow h-[60px] md:h-[78px] items-center rounded-full px-[69px] py-5 text-[#FFFFFF] text-[16px] md:text-[24px] font-semibold flex gap-2.5">
         Book A Call To Order
       </button>
 

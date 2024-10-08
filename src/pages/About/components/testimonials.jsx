@@ -26,7 +26,7 @@ const Testimonials = () => {
     }
   };
   return (
-    <div className="py-[93px]">
+    <div id="testimonials" className="py-[93px]">
       {" "}
       <div className="flex md:flex-row flex-col  justify-center gap-[34px] md:justify-between md:px-20 items-center">
         <h2 className="text-[24px] md:text-[36px] font-bold text-[#323232s]">Testimonial</h2>

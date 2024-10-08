@@ -26,7 +26,7 @@ const Awards = () => {
     }
   };
   return (
-    <div id="award" className="py-[72px]">
+    <div id="awards" className="py-[72px]">
       <div className="flex md:flex-row flex-col justify-between px-[22px] md:px-10">
         <div>
           <h2 className="text-[#493D14] text-[24px] md:text-[36px] font-bold">

@@ -17,10 +17,10 @@ const Hero = () => {
         Experience the Fun & Convenience <br/> of Ball-O-Shot
       </h1>
       <div className="flex md:flex-row flex-col justify-center items-center  gap-x-[22px] gap-y-[16px] pt-[38px] pb-[48px]">
-        <button className="border border-[#303030] h-[58px] md:h-[78px] items-center rounded-full px-[42px] py-4 text-[#2F2F2F] text-[18px] md:text-[24px] font-semibold flex gap-2.5">
+        <button className="border hover:bg-gray-100 duration-200 ease-in-out transition-all border-[#303030] h-[58px] md:h-[78px] items-center rounded-full px-[42px] py-4 text-[#2F2F2F] text-[18px] md:text-[24px] font-semibold flex gap-2.5">
           <span className="w-[32px] md:w-[43px]"><GofundMe /></span> Go Fund Me{" "}
         </button>
-        <button className="bg-[#303030]  button-inner-shadow h-[58px] md:h-[78px] items-center rounded-full px-[69px] py-5 text-[#FFFFFF] text-18px md:text-[24px] font-semibold flex gap-2.5">
+        <button className="bg-[#303030] hover:bg-[#303030]/90 duration-200 ease-in-out transition-all  button-inner-shadow h-[58px] md:h-[78px] items-center rounded-full px-[69px] py-5 text-[#FFFFFF] text-18px md:text-[24px] font-semibold flex gap-2.5">
           Book A Call To Order
         </button>
       </div>

@@ -1,18 +1,38 @@
-import { Route, Routes } from "react-router-dom"
-import Home from "./pages/Home"
-import About from "./pages/About"
-
+import {
+  // Route,
+  // Routes,
+  // ScrollRestoration,
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Root from "./layout/root";
 
 function App() {
+  const router = createBrowserRouter([
+   
+   
+    {
+      path:'/',
+      element:<Root/>,
+      children:[
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+      ]
+    }
 
+   
+  ]);
   return (
-    <div>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-    </Routes>
-  </div>
-  )
+      <RouterProvider  router={router}/>
+  );
 }
 
-export default App
+export default App;
