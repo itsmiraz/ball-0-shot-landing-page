@@ -7,6 +7,7 @@ import researchImage from "../../../assets/images/Research.webp";
 import refineMent from "../../../assets/images/Refinement.webp";
 
 import LB from "../../../components/ui/lineBreak";
+import { useEffect, useRef } from "react";
 
 const History = () => {
   const sections = [
@@ -32,6 +33,18 @@ const History = () => {
       alt: "refinement-image",
     },
   ];
+  const sectionRef = useRef(null);
+
+  const getInnerheight = (section)=>{
+    return section?.current?.offsetHeight
+  }
+  useEffect(() => {
+
+    
+    if (sectionRef?.current) {
+      console.log(getInnerheight(sectionRef));; // Logs the element's height
+    }
+  }, [sectionRef]);
   return (
     <div id='history' className="pt-[65px] pb-[126px]">
       <h2 className="text-[28px] md:text-[40px] font-bold text-[#323232] text-center">
@@ -130,8 +143,8 @@ const History = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:hidden  pt-[40px] px-[10px] gap-x-[14px] ">
-        <div className="h-[740px] relative w-[47px] flex justify-center items-center">
+      <div ref={sectionRef} className="flex md:hidden  justify-center pt-[40px] px-[10px] gap-x-[14px] ">
+        <div className="md:h-[850px] h-[740px]  relative w-[47px] flex justify-center items-center">
           {/* step */}
           <div className="w-[4px] bg-[#474747] h-full"></div>
           <img

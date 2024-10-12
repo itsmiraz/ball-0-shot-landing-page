@@ -26,7 +26,12 @@ const Header = () => {
 
         </li>
         <li>
+       <Link to={"/"}>
+       
           <img className="max-w-[130px]" src={logo} alt="ball-0-shot-logo" />
+       
+       </Link>
+          
         </li>
         <li>
        <Link to={'#history'}>

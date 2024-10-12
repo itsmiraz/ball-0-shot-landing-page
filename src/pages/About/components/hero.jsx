@@ -3,7 +3,7 @@ import LB from "../../../components/ui/lineBreak";
 import splashImage from "../../../assets/images/splash-exploded.webp";
 const Hero = () => {
   return (
-    <div className="relative  bg-gradient-to-t from-[#F4F4F4] to-[#FFFFFF] md:pb-[66px] pt-[67px] md:py-[120px]">
+    <div className="relative min-h-[521px]  bg-gradient-to-t from-[#F4F4F4] to-[#FFFFFF] md:pb-[66px] pt-[67px] md:py-[120px]">
      <div className="px-4 md:pl-20">
      <h1 className="text-[#282828] md:text-start text-center  relative z-20 leading-[35px] md:leading-[60px] text-[28px] md:text-[48px] font-bold">
         Own the Experience with Ball-O-Shot

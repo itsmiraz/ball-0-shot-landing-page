@@ -25,7 +25,8 @@ const AboutHeader = () => {
           </Link>
         </li>
         <li>
-          <img className="max-w-[130px]" src={logo} alt="ball-0-shot-logo" />
+       <Link to={"/"}>
+       <img className="max-w-[130px]" src={logo} alt="ball-0-shot-logo" /></Link>
         </li>
         <li>
           <Link to={"#service"}>

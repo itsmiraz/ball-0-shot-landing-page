@@ -25,7 +25,7 @@ const Gallery = () => {
   };
   return (
     <div className="pt-[135px] pb-[96px] ">
-      <div className="flex md:flex-row gap-[22px] flex-col justify-center md:justify-between md:px-20 items-center">
+      <div className="flex md:mb-[57px] md:flex-row gap-[22px] flex-col justify-center md:justify-between md:px-20 items-center">
         <h2 className="text-[24px] md:text-[40px] font-bold text-[#323232s]">Gallery</h2>
         <div className="gap-x-[21px]  flex items-center">
           <button  className="md:w-[80px] w-[34px]"  onClick={handleLeftClick}>
@@ -62,7 +62,7 @@ const Gallery = () => {
               spaceBetween: 20,
             },
             640: {
-              slidesPerView: 1,
+              slidesPerView: 1.5,
               spaceBetween: 20,
             },
             768: {
@@ -74,15 +74,15 @@ const Gallery = () => {
               spaceBetween: 20,
             },
             1200: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1400: {
               slidesPerView: 2.2,
               spaceBetween: 20,
             },
+            1400: {
+              slidesPerView: 2.4,
+              spaceBetween: 20,
+            },
             1600: {
-              slidesPerView: 2.7,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
           }}

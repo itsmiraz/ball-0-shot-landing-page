@@ -32,7 +32,7 @@ const Footer = () => {
     <div className="pt-[48px] pb-[34px]">
       <img src={logo} className="max-w-[130px] mx-auto" alt="" />
 
-      <div className="flex gap-x-[20px] text-2xl text-gray-700 md:gap-x-[35px] justify-center items-center pt-[33px] pb-[37px]">
+      <div className="flex gap-x-[20px] text-2xl text-gray-700 md:gap-x-[10px] justify-center items-center pt-[33px] pb-[37px]">
         {/* {navLinks.map((item, i) => ( */}
           <Link to={"/"} >
             {" "}

@@ -23,3 +23,16 @@ html {
   background: linear-gradient(270.82deg, #131313 0.21%, #565656 99.79%);
 
 }
+
+@keyframes slowSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.slow-spin {
+  animation: slowSpin 4s linear infinite;
+}

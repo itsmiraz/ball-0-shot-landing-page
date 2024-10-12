@@ -1,8 +1,13 @@
-import heroBallImage from "../../../assets/images/hero-ball-image.webp";
+import heroBallImage from "../../../assets/images/rounded-ball.png";
 import GrayDot from "../../../assets/icons/grayDot.svg";
 import GofundMe from "../../../assets/icons/goFundme.svg";
 // import LB from "../../../components/ui/lineBreak";
 import MobileHeroBall from '../../../assets/images/hero-mobile-drop.webp'
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import {motion} from 'framer-motion'
+import { slideAnimation } from "../../../lib/motion";
+
 const Hero = () => {
   const expertise = [
     "Vegan",
@@ -11,9 +16,31 @@ const Hero = () => {
     "Convenience",
     "Visibility",
   ];
+
+  const [sectionRef, inView] = useInView({
+    triggerOnce: true, // Trigger animation once when it enters the viewport
+    threshold: 0.2, // Adjust this threshold as needed
+});
+
+// State to control whether animations should play
+const [animate, setAnimate] = useState(false);
+
+useEffect(() => {
+    if (inView) {
+        setAnimate(true);
+    }
+}, [inView]);
+
   return (
-    <div className="pt-[84px] relative">
-      <h1 className="text-[#282828] text-[28px] md:text-[48px] text-center font-semibold leading-[35px] md:leading-[60px]">
+    <div ref={sectionRef} className="pt-[84px] relative">
+    <motion.div
+    
+    initial='initial'
+    animate={animate ? 'animate' : 'initial'}
+    exit='exit'
+    variants={slideAnimation('up')}
+    >
+    <h1 className="text-[#282828] text-[28px] md:text-[48px] text-center font-semibold leading-[35px] md:leading-[60px]">
         Experience the Fun & Convenience <br/> of Ball-O-Shot
       </h1>
       <div className="flex md:flex-row flex-col justify-center items-center  gap-x-[22px] gap-y-[16px] pt-[38px] pb-[48px]">
@@ -24,8 +51,10 @@ const Hero = () => {
           Book A Call To Order
         </button>
       </div>
+    </motion.div>
 
-      <img className="mx-auto md:block hidden" src={heroBallImage} alt="hero-image" />
+     <div className="overflow-hidden h-[400px] pt-20">
+     <img className="mx-auto slow-spin md:block  w-[767px] -translate-y-40 hidden" src={heroBallImage} alt="hero-image" />
       <img className="mx-auto  md:hidden block " src={MobileHeroBall} alt="hero-image" />
 
       <div className="px-20 transform w-full left-1/2 -translate-x-1/2 py-[26px]  md:py-[35px] absolute bottom-0 bg-[#FFFFFFB2] border-[#FFFFFF] backdrop-blur-sm">
@@ -45,6 +74,8 @@ const Hero = () => {
           ))}
         </ul>
       </div>
+     </div>
+     
     </div>
   );
 };
