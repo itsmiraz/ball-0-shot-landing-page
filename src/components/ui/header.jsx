@@ -1,6 +1,6 @@
 import logo from "@/assets/logo/logo.png";
-import Menu from "../../../assets/icons/menu.svg";
-import Close from "../../../assets/icons/close.svg";
+import Menu from "../../assets/icons/menu.svg";
+import Close from "../../assets/icons/close.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 const Header = () => {
@@ -10,17 +10,17 @@ const Header = () => {
     <div className="flex md:flex-row flex-col justify-center items-center">
       <ul className=" hidden md:flex items-center justify-center gap-x-10 ">
         <li>
-          <Link to={'#about'}>
+          <Link to={'/#about'}>
           <p className="text-[20px] leading-[25px]">About</p>
           </Link>
         </li>
         <li>
-       <Link to={'#specs'}>
+       <Link to={'/#specs'}>
        <p className="text-[20px] leading-[25px]">Specs</p>
        </Link>
         </li>
         <li>
-       <Link to={'#mission'}>
+       <Link to={'/#mission'}>
           <p className="text-[20px] leading-[25px]">Mission</p>
        </Link>
 
@@ -34,20 +34,20 @@ const Header = () => {
           
         </li>
         <li>
-       <Link to={'#history'}>
+       <Link to={'/#history'}>
          
           <p className="text-[20px] leading-[25px]">History</p>
        </Link>
         </li>
         <li>
-       <Link to={'#events'}>
+       <Link to={'/#events'}>
        
           <p className="text-[20px] leading-[25px]">Events</p>
        </Link>
          
         </li>
         <li>
-       <Link to={'#awards'}>
+       <Link to={'/#awards'}>
           <p className="text-[20px] leading-[25px]">Certificate</p>
        
        </Link>
