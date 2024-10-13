@@ -39,12 +39,14 @@ const History = () => {
     return section?.current?.offsetHeight
   }
   useEffect(() => {
-
-    
     if (sectionRef?.current) {
       console.log(getInnerheight(sectionRef));; // Logs the element's height
     }
   }, [sectionRef]);
+
+
+
+
   return (
     <div id='history' className="pt-[65px] pb-[126px]">
       <h2 className="text-[28px] md:text-[40px] font-bold text-[#323232] text-center">

@@ -53,8 +53,8 @@ const expertiseList = [...expertise, ...expertise,...expertise,...expertise];
       </div>
     </motion.div>
 
-     <div className="overflow-hidden h-[400px] pt-20">
-     <img className="mx-auto slow-spin   w-[350px] md:w-[767px] -translate-y-40 " src={heroBallImage} alt="hero-image" />
+     <div className="overflow-hidden h-[250px] md:h-[400px] pt-20">
+     <img className="mx-auto slow-spin   w-[350px] md:w-[767px] -translate-y-80  md:-translate-y-40 " src={heroBallImage} alt="hero-image" />
       {/* <img className="mx-auto  md:hidden block " src={MobileHeroBall} alt="hero-image" /> */}
 
       {/* <div className="px-20 transform w-full left-1/2 -translate-x-1/2 py-[26px]  md:py-[35px] absolute bottom-0 bg-[#FFFFFFB2] border-[#FFFFFF] backdrop-blur-sm">
