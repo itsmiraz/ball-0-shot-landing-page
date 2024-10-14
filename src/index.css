@@ -24,6 +24,22 @@ html {
 
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation {
+  animation: rotate 2s linear infinite; /* Adjust duration and timing as needed */
+  transform-origin: center; /* Ensure it rotates around its center */
+}
+
+
+
 @keyframes slowSpin {
   0% {
     transform: rotate(0deg);

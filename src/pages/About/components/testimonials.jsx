@@ -55,7 +55,7 @@ const Testimonials = () => {
             prevEl: ".left-arrow",
           }}
           modules={[Pagination, Navigation]}
-          //   loop={true}
+            loop={true}
           breakpoints={{
             400: {
               slidesPerView: 1.2,
@@ -78,11 +78,16 @@ const Testimonials = () => {
               spaceBetween: 20,
             },
             1400: {
-              slidesPerView: 2.2,
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+         
+            1500: {
+              slidesPerView: 2.1,
               spaceBetween: 20,
             },
             1600: {
-              slidesPerView: 2.2,
+              slidesPerView: 2.6,
               spaceBetween: 20,
             },
           }}

@@ -46,6 +46,7 @@ const Gallery = () => {
             bulletClass: "custom-bullet",
             bulletActiveClass: "custom-bullet-active",
           }}
+          loop={true}
           navigation={{
             nextEl: ".right-arrow",
             prevEl: ".left-arrow",
@@ -78,11 +79,11 @@ const Gallery = () => {
               spaceBetween: 20,
             },
             1400: {
-              slidesPerView: 2.4,
+              slidesPerView: 2.7,
               spaceBetween: 20,
             },
             1600: {
-              slidesPerView: 3,
+              slidesPerView: 3.1,
               spaceBetween: 20,
             },
           }}

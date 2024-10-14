@@ -38,6 +38,18 @@ export const AwardContent = [
     desc: "We Took Advantage For Every Event That More Need A Ball O shot",
     code: "X2342435354353",
   },
+  {
+    img: award2,
+    title: "Certificate Earned",
+    desc: "We Took Advantage For Every Event That More Need A Ball O shot",
+    code: "X2342435354353",
+  },
+  {
+    img: award3,
+    title: "Certificate Earned",
+    desc: "We Took Advantage For Every Event That More Need A Ball O shot",
+    code: "X2342435354353",
+  },
 ];
 
 export const OccasionContent = [
@@ -103,6 +115,16 @@ export const GalleryContent = [
   {
     image: partyEvent,
     title: "Party Event",
+    date: "24 September 2023",
+  },
+  {
+    image: croudFunding,
+    title: "Crowdfunding",
+    date: "24 September 2023",
+  },
+  {
+    image: charityEvent,
+    title: "Charity Event",
     date: "24 September 2023",
   },
   {

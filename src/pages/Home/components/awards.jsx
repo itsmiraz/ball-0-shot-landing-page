@@ -63,7 +63,7 @@ const Awards = () => {
             prevEl: ".left-arrow",
           }}
           modules={[Pagination, Navigation]}
-          //   loop={true}
+            loop={true}
           breakpoints={{
             400: {
               slidesPerView: 1.2,

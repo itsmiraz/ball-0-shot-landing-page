@@ -63,34 +63,34 @@ const Occasion = () => {
           modules={[Pagination, Navigation]}
           loop={true}
           breakpoints={{
-             250: {
-    slidesPerView: 1,
-    spaceBetween: 10,
-  },
-  400: {
-    slidesPerView: 1.2,
-    spaceBetween: 10,
-  },
-  640: {
-    slidesPerView: 1.5,
-    spaceBetween: 15,
-  },
-  768: {
-    slidesPerView: 2,
-    spaceBetween: 20,
-  },
-  1024: {
-    slidesPerView: 2.5,
-    spaceBetween: 30,
-  },
-  1400: {
-    slidesPerView: 3.4,
-    spaceBetween: 30,
-  },
-  1600: {
-    slidesPerView: 4,
-    spaceBetween: 30,
-  },
+            250: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            400: {
+              slidesPerView: 1.2,
+              spaceBetween: 10,
+            },
+            640: {
+              slidesPerView: 1.5,
+              spaceBetween: 15,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 2.5,
+              spaceBetween: 30,
+            },
+            1400: {
+              slidesPerView: 3.4,
+              spaceBetween: 30,
+            },
+            1600: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
           }}
           className="mySwiper "
         >
