@@ -1,10 +1,33 @@
+import { useInView } from "react-intersection-observer";
 import { AboutExpertise } from "../../../constants";
-
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 const Expertise = () => {
+  const [sectionRef, inView] = useInView({
+    triggerOnce: true, // Trigger animation once when it enters the viewport
+    threshold: 0.2, // Adjust this threshold as needed
+  });
+
+  // State to control whether animations should play
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setAnimate(true);
+    }
+  }, [inView]);
+
   return (
-  <div id="service" className="pt-[89px] flex justify-center md:flex-row flex-col gap-x-[31px]">
+    <div
+    ref={sectionRef}
+      id="service"
+      className="pt-[89px] flex justify-center md:flex-row flex-col gap-x-[31px]"
+    >
       {AboutExpertise.map((item, i) => (
-        <div
+        <motion.div
+          initial={{ opacity: 0 , x:-100}}
+          animate={{ opacity: animate ? 1 : 0 , x: animate?0:-100 }}
+          transition={{ duration: 0.3, delay: 0.3 * i }}
           className="bg-[#F8F8F8] md:size-[400px] rounded-[33px]  flex flex-col justify-center items-center pt-[72px] pb-[34px] px-5"
           key={i}
         >
@@ -18,7 +41,7 @@ const Expertise = () => {
               {item.description}
             </p>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

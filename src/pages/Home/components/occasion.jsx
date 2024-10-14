@@ -5,12 +5,14 @@ import RightArrowFil from "../../../assets/icons/rightArrowFill.svg";
 import PropTypes from "prop-types";
 
 import BackgroundImage from "../../../assets/images/project-occassion-bg.webp";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 const Occasion = () => {
   const swiperRef = useRef(null);
 
@@ -25,9 +27,25 @@ const Occasion = () => {
       swiperRef.current.swiper.slideNext();
     }
   };
+
+  const [sectionRef, inView] = useInView({
+    triggerOnce: true, // Trigger animation once when it enters the viewport
+    threshold: 0.2, // Adjust this threshold as needed
+  });
+
+  // State to control whether animations should play
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setAnimate(true);
+    }
+  }, [inView]);
+
   return (
     <div
       id="events"
+      ref={sectionRef}
       style={{
         backgroundImage: `url(${BackgroundImage})`,
         backgroundSize: "cover", // Makes sure the image covers the entire area
@@ -60,15 +78,16 @@ const Occasion = () => {
             nextEl: ".right-arrow",
             prevEl: ".left-arrow",
           }}
+          centeredSlides={true}
           modules={[Pagination, Navigation]}
           loop={true}
           breakpoints={{
             250: {
-              slidesPerView: 1,
+              slidesPerView: 1.5,
               spaceBetween: 10,
             },
             400: {
-              slidesPerView: 1.2,
+              slidesPerView: 1.7,
               spaceBetween: 10,
             },
             640: {
@@ -96,7 +115,13 @@ const Occasion = () => {
         >
           {OccasionContent.map((item, i) => (
             <SwiperSlide key={i}>
-              <OccasionCard data={item} key={i} />
+              <motion.div
+                initial={{ opacity: 0 ,}}
+                animate={{ opacity: animate ? 1 : 0, }}
+                transition={{ duration: 0.2, delay: 0.3 * i }}
+              >
+                <OccasionCard data={item} key={i} />
+              </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>

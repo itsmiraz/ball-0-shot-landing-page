@@ -7,8 +7,10 @@ import researchImage from "../../../assets/images/Research.webp";
 import refineMent from "../../../assets/images/Refinement.webp";
 
 import LB from "../../../components/ui/lineBreak";
-import { useEffect, useRef } from "react";
-
+import { useEffect, useRef, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+import {  slideAnimation } from "../../../lib/motion";
 const History = () => {
   const sections = [
     {
@@ -35,20 +37,31 @@ const History = () => {
   ];
   const sectionRef = useRef(null);
 
-  const getInnerheight = (section)=>{
-    return section?.current?.offsetHeight
-  }
+  const getInnerheight = (section) => {
+    return section?.current?.offsetHeight;
+  };
   useEffect(() => {
     if (sectionRef?.current) {
-      console.log(getInnerheight(sectionRef));; // Logs the element's height
+      console.log(getInnerheight(sectionRef)); // Logs the element's height
     }
   }, [sectionRef]);
 
+  const [animateRef, inView] = useInView({
+    triggerOnce: true, // Trigger animation once when it enters the viewport
+    threshold: 0.2, // Adjust this threshold as needed
+  });
 
+  // State to control whether animations should play
+  const [animate, setAnimate] = useState(false);
 
+  useEffect(() => {
+    if (inView) {
+      setAnimate(true);
+    }
+  }, [inView]);
 
   return (
-    <div id='history' className="pt-[65px] pb-[126px]">
+    <div id="history" className="pt-[65px] pb-[126px]">
       <h2 className="text-[28px] md:text-[40px] font-bold text-[#323232] text-center">
         Our Ball-O-Shot History
       </h2>
@@ -57,20 +70,36 @@ const History = () => {
         Green Safe
       </p>
 
-      <div className="pt-[88px]  hidden max-w-[1265px] mx-auto md:flex justify-center gap-x-[74px]">
+      <div
+        ref={animateRef}
+        className="pt-[88px]  hidden max-w-[1265px] mx-auto md:flex justify-center gap-x-[74px]"
+      >
         {/* left section */}
         <div className="w-fit">
           {/* inception Image */}
-          <div>
+          <motion.div
+            initial="initial"
+            animate={animate ? "animate" : "initial"}
+            exit="exit"
+            transition={{ delay: 0.1 }}
+            variants={slideAnimation("left")}
+          >
             <img
               className="max-w-[415px]"
               src={inceptionImage}
               alt="inception-image"
             />
-          </div>
+          </motion.div>
 
           {/* Research Text */}
-          <div className="pt-[89px] pb-[108px]">
+          <motion.div
+            initial="initial"
+            animate={animate ? "animate" : "initial"}
+            exit="exit"
+            transition={{ delay: 0.2 }}
+            variants={slideAnimation("left")}
+            className="pt-[89px] pb-[108px]"
+          >
             <h2 className="text-[#131313] leading-[35px] font-bold text-[28px]">
               Research and Development
             </h2>
@@ -79,31 +108,44 @@ const History = () => {
               the idea to life <LB /> and ensure it met the highest <LB />{" "}
               standards.
             </p>
-          </div>
+          </motion.div>
           {/* refinement image */}
-          <div>
+          <motion.div
+            initial="initial"
+            animate={animate ? "animate" : "initial"}
+            exit="exit"
+            transition={{ delay: 0.3 }}
+            variants={slideAnimation("left")}
+          >
             <img
               className="max-w-[415px]"
               src={refineMent}
               alt="refinement-image"
             />
-          </div>
+          </motion.div>
         </div>
         {/* mid line */}
         <div className="h-[658px] relative w-[70px] flex justify-center items-center">
-          <div className="w-[7px] bg-[#474747] h-full"></div>
-          <img
-            className="absolute min-w-[70px] top-0 transform -translate-x-1/2 left-1/2"
+          <div
+            className={` ${
+              animate ? " h-full" : "h-0"
+            } duration-500 transition-all transform w-[7px] bg-[#474747]`}
+          ></div>
+          <motion.img
+            initial={{opacity:0 }}
+            animate={{ opacity:animate?1:0 }}
+            transition={{duration:0.1,delay:0.1}}
+            className="absolute  min-w-[70px] top-0 transform -translate-x-1/2 left-1/2"
             src={step1}
             alt=""
           />
-          <img
-            className="absolute min-w-[70px] top-1/2 -translate-y-1/2 transform  -translate-x-1/2 left-1/2"
+          <motion.img
+            className="absolute  min-w-[70px] top-1/2 -translate-y-1/2 transform  -translate-x-1/2 left-1/2"
             src={step2}
             alt=""
           />
-          <img
-            className="absolute min-w-[70px] bottom-0 transform  -translate-x-1/2 left-1/2"
+          <motion.img
+            className="absolute  min-w-[70px] bottom-0 transform  -translate-x-1/2 left-1/2"
             src={step3}
             alt=""
           />
@@ -112,7 +154,14 @@ const History = () => {
         {/* left section */}
         <div className="w-fit">
           {/* Research Text */}
-          <div className="">
+          <motion.div
+            initial="initial"
+            animate={animate ? "animate" : "initial"}
+            exit="exit"
+            transition={{ delay: 0.1 }}
+            variants={slideAnimation("right")}
+            className=""
+          >
             <h2 className="text-[#131313] leading-[35px] font-bold text-[28px]">
               Inception (Summer 2022)
             </h2>
@@ -121,18 +170,32 @@ const History = () => {
               marking <LB />
               the beginning of an exciting journey.
             </p>
-          </div>
+          </motion.div>
           {/* inception Image */}
-          <div className="pt-[157px] pb-[70px]">
+          <motion.div
+            initial="initial"
+            animate={animate ? "animate" : "initial"}
+            exit="exit"
+            transition={{ delay: 0.2 }}
+            variants={slideAnimation("right")}
+            className="pt-[157px] pb-[70px]"
+          >
             <img
               className="max-w-[415px]"
               src={researchImage}
               alt="inception-image"
             />
-          </div>
+          </motion.div>
 
           {/* Refinement Text */}
-          <div className="">
+          <motion.div
+            initial="initial"
+            animate={animate ? "animate" : "initial"}
+            exit="exit"
+            transition={{ delay: 0.3 }}
+            variants={slideAnimation("right")}
+            className=""
+          >
             <h2 className="text-[#131313] leading-[35px] font-bold text-[28px]">
               Refinement and Perfection
             </h2>
@@ -142,10 +205,14 @@ const History = () => {
               the way <LB /> for Ball-O-Shot’s successful market <LB />{" "}
               introduction
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div ref={sectionRef} className="flex md:hidden  justify-center pt-[40px] px-[10px] gap-x-[14px] ">
+
+      <div
+        ref={sectionRef}
+        className="flex md:hidden  justify-center pt-[40px] px-[10px] gap-x-[14px] "
+      >
         <div className="md:h-[850px] h-[740px]  relative w-[47px] flex justify-center items-center">
           {/* step */}
           <div className="w-[4px] bg-[#474747] h-full"></div>
@@ -168,11 +235,7 @@ const History = () => {
         <div className="space-y-[34px]">
           {sections.map((section, index) => (
             <div key={index}>
-              <img
-                className=""
-                src={section.image}
-                alt={section.alt}
-              />
+              <img className="" src={section.image} alt={section.alt} />
               <h2 className="text-[#131313] pt-[32px] leading-[26px] font-bold text-[20px]">
                 {section.title}
               </h2>

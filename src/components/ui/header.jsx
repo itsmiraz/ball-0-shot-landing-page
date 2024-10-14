@@ -57,7 +57,10 @@ const Header = () => {
       <div className="md:hidden  block sticky top-0 w-full">
         <div className="relative flex border-b border-[#F2F4F7] py-[17px] px-[20px] w-full justify-between">
           <div>
+       <Link to={"/"}>
             <img className="max-w-[89px]" src={logo} alt="" />
+       </Link>
+         
           </div>
           {/* menu */}
 
