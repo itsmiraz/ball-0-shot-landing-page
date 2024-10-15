@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { slideAnimation } from "../../../lib/motion";
 const Occasion = () => {
   const swiperRef = useRef(null);
 
@@ -65,7 +66,13 @@ const Occasion = () => {
         Book A Call To Order
       </button>
 
-      <div className="pl-4 md:pl-10 md:pr-5 pt-[33px] pb-[49px]">
+      <motion.div
+        initial="initial"
+        animate={animate ? "animate" : "initial"}
+        exit="exit"
+        variants={slideAnimation("up")}
+        className="pl-4 md:pl-10 md:pr-5 pt-[33px] pb-[49px]"
+      >
         <Swiper
           ref={swiperRef}
           pagination={{
@@ -103,7 +110,7 @@ const Occasion = () => {
               spaceBetween: 30,
             },
             1400: {
-              slidesPerView: 3.4,
+              slidesPerView: 3,
               spaceBetween: 30,
             },
             1600: {
@@ -115,17 +122,11 @@ const Occasion = () => {
         >
           {OccasionContent.map((item, i) => (
             <SwiperSlide key={i}>
-              <motion.div
-                initial={{ opacity: 0 ,}}
-                animate={{ opacity: animate ? 1 : 0, }}
-                transition={{ duration: 0.2, delay: 0.3 * i }}
-              >
-                <OccasionCard data={item} key={i} />
-              </motion.div>
+              <OccasionCard data={item} key={i} />
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </motion.div>
       <div className="flex justify-center items-center gap-x-6">
         <button onClick={handleLeftClick}>
           <LeftArrowFil />
