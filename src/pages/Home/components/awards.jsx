@@ -82,15 +82,20 @@ const Awards = () => {
               spaceBetween: 20,
             },
             1200: {
-              slidesPerView: 2,
+              slidesPerView: 1.5,
               spaceBetween: 20,
             },
             1400: {
-              slidesPerView: 2.4,
+              slidesPerView: 2,
               spaceBetween: 20,
             },
+          
             1600: {
-              slidesPerView: 2.7,
+              slidesPerView: 2.2,
+              spaceBetween: 20,
+            },
+            1800: {
+              slidesPerView: 2.4,
               spaceBetween: 20,
             },
           }}
