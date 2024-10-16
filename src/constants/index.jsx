@@ -4,9 +4,18 @@ import ski from "../assets/images/projectoccassion/ski-resort.png";
 import festival from "../assets/images/projectoccassion/festival.png";
 import sports from "../assets/images/projectoccassion/sports.png";
 
-import award1 from "../assets/images/awards/award-1.png";
-import award2 from "../assets/images/awards/award-2.png";
-import award3 from "../assets/images/awards/award-3.png";
+// import award1 from "../assets/images/awards/award-1.png";
+// import award2 from "../assets/images/awards/award-2.png";
+// import award3 from "../assets/images/awards/award-3.png";
+
+import orderOfChemistsQuebecAward  from '../assets/images/awards/ORDER OR CHEMIST.webp'
+import quebecBiologistAssociationAward  from '../assets/images/awards/QUEBEC BIOLOGIST.webp'
+import forcesAvenirMedal  from '../assets/images/awards/FORCES AVENIR.webp'
+import defi48RegionalWinner  from '../assets/images/awards/DEFI48.webp'
+import defi48FavouriteTeamWinner  from '../assets/images/awards/DEFI48.webp'
+import oseEntreprendreWinner  from '../assets/images/awards/OSE ENTREPRENDRE.webp'
+import superExpoScienceProvincialFinale  from '../assets/images/awards/SUPER EXPO-SCIENCE PROVINCIAL.webp'
+
 
 import OnsiteIcon from "../assets/icons/onSiteLogo.svg";
 import PartnerShipIcon from "../assets/icons/partnerShip.svg";
@@ -30,35 +39,47 @@ import touskiVilleDeGatineau from "../assets/images/gallery/19-05-2023-Touski-Vi
 
 export const AwardContent = [
   {
-    img: award1,
-    title: "Certificate Earned",
-    desc: "We Took Advantage For Every Event That More Need A Ball O shot",
-    code: "X2342435354353",
+    img: orderOfChemistsQuebecAward, // Replace with actual image name
+    title: "2023 ORDER OF CHEMISTS OF QUEBEC AWARD",
+    desc: "Fondé en 1926, l’Ordre des chimistes du Québec (Ordre) est l’ordre professionnel qui encadre l’exercice de la chimie, au Québec.",
+    date: "31/03/2023",
   },
   {
-    img: award2,
-    title: "Certificate Earned",
-    desc: "We Took Advantage For Every Event That More Need A Ball O shot",
-    code: "X2342435354353",
+    img: quebecBiologistAssociationAward, // Replace with actual image name
+    title: "2023 QUEBEC BIOLOGIST ASSOCIATION AWARD",
+    desc: "L’Association des biologistes du Québec (ABQ) regroupe des membres appartenant au vaste champ des sciences biologiques.",
+    date: "25/04/2023",
   },
   {
-    img: award3,
-    title: "Certificate Earned",
-    desc: "We Took Advantage For Every Event That More Need A Ball O shot",
-    code: "X2342435354353",
+    img: forcesAvenirMedal, // Replace with actual image name
+    title: "FORCES AVENIR BRONZE, SILVER AND GOLD MEDAL",
+    desc: "Forces AVENIR vise à promouvoir l'engagement étudiant dans des projets qui contribuent à la formation de citoyens conscients.",
+    date: "12/07/2023 - 28/09/2023",
   },
   {
-    img: award2,
-    title: "Certificate Earned",
-    desc: "We Took Advantage For Every Event That More Need A Ball O shot",
-    code: "X2342435354353",
+    img: defi48RegionalWinner, // Replace with actual image name
+    title: "DÉFI48 REGIONAL WINNER",
+    desc: "Le Défi48, c’est la compétition entrepreneuriale par excellence pour développer sa fibre d'entrepreneur.e dans le feu de l’action.",
+    date: "08/04/2023",
   },
   {
-    img: award3,
-    title: "Certificate Earned",
-    desc: "We Took Advantage For Every Event That More Need A Ball O shot",
-    code: "X2342435354353",
+    img: defi48FavouriteTeamWinner, // Replace with actual image name
+    title: "DÉFI48 FAVOURITE TEAM WINNER",
+    desc: "Le Défi48, c’est la compétition entrepreneuriale par excellence pour développer sa fibre d'entrepreneur.e dans le feu de l’action.",
+    date: "05/09/2023",
   },
+  {
+    img: oseEntreprendreWinner, // Replace with actual image name
+    title: "OSE ENTREPRENDRE LOCAL & REGIONAL WINNER",
+    desc: "OSEntreprendre a pour mission d’inspirer le désir d’entreprendre pour contribuer à bâtir un Québec fier, innovant, engagé et prospère.",
+    date: "14/02/2023",
+  },
+  {
+    img: superExpoScienceProvincialFinale, // Replace with actual image name
+    title: "SUPER EXPO-SCIENCE PROVINCIAL FINALEE",
+    desc: "The Super Expo-sciences, the Quebec final, brings together the best projects in Quebec, from the 12 regional finals.",
+    date: "27/04/2023",
+  }
 ];
 
 export const OccasionContent = [

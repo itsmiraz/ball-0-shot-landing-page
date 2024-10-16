@@ -63,10 +63,10 @@ const Awards = () => {
             prevEl: ".left-arrow",
           }}
           modules={[Pagination, Navigation]}
-            loop={true}
+          loop={true}
           breakpoints={{
             400: {
-              slidesPerView: 1.2,
+              slidesPerView: 1,
               spaceBetween: 20,
             },
             640: {
@@ -86,7 +86,7 @@ const Awards = () => {
               spaceBetween: 20,
             },
             1400: {
-              slidesPerView: 2.2,
+              slidesPerView: 2.4,
               spaceBetween: 20,
             },
             1600: {
@@ -110,11 +110,15 @@ const Awards = () => {
 export default Awards;
 const AwardCard = ({ data }) => {
   return (
-    <div className="bg-[#F8F8F8] cursor-pointer rounded-[20px] pt-[26px] md:pt-[53px] pb-[20px] md:pb-[40px] px-[15px] md:px-[30px] w-[308px] md:w-[616px]">
+    <div className="bg-[#F8F8F8] cursor-pointer rounded-[20px] pt-[26px] md:pt-[53px] pb-[20px] md:pb-[40px] px-[15px] md:px-[30px] w-[308px] h-[258px] md:h-[480px] md:w-[700px]">
       <div>
-        <img className="md:max-w-fit max-w-[123px]" src={data.img} alt="" />
+        <img
+          className="md:max-w-fit md:max-h-[133px] max-h-[83px] max-w-[133px] md:w-[223px]"
+          src={data.img}
+          alt=""
+        />
       </div>
-      <div>
+      <div className="w-full mt-5">
         <h2 className="text-[#282828] text-[18px] md:text-[36px] font-bold">
           {data.title}
         </h2>

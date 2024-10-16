@@ -143,9 +143,9 @@ export default Occasion;
 
 const OccasionCard = ({ data }) => {
   return (
-    <div className="p-[6px] md:p-3 cursor-pointer rounded-[16px] h-[257px] md:h-[457px] bg-[#FFFFFF] w-[225px] md:w-[400px]">
+    <div className="p-[6px] md:p-3 cursor-pointer rounded-[16px] h-[257px] md:h-[477px] bg-[#FFFFFF] w-[225px] md:w-[430px]">
       <div>
-        <img src={data.img} alt="image" />
+        <img className="w-full" src={data.img} alt="image" />
       </div>
       <div className="pt-[12px] md:pt-[23px]">
         <h2 className="text-[#282828] text-[15px] md:text-[28px] font-semibold">
