@@ -41,15 +41,17 @@ const Gallery = () => {
   }, [inView]);
 
   return (
-    <div  ref={sectionRef} className="pt-[135px] pb-[96px] ">
+    <div ref={sectionRef} className="pt-[135px] pb-[96px] ">
       <div className="flex md:mb-[57px] md:flex-row gap-[22px] flex-col justify-center md:justify-between md:px-20 items-center">
-        <h2 className="text-[24px] md:text-[40px] font-bold text-[#323232s]">Gallery</h2>
+        <h2 className="text-[24px] md:text-[40px] font-bold text-[#323232s]">
+          Gallery
+        </h2>
         <div className="gap-x-[21px]  flex items-center">
-          <button  className="md:w-[80px] w-[34px]"  onClick={handleLeftClick}>
+          <button className="md:w-[80px] w-[34px]" onClick={handleLeftClick}>
             <LeftArrow />
           </button>
 
-          <button   className="md:w-[80px] w-[34px]" onClick={handleRightClick}>
+          <button className="md:w-[80px] w-[34px]" onClick={handleRightClick}>
             <RightArrow />
           </button>
         </div>
@@ -108,14 +110,13 @@ const Gallery = () => {
         >
           {GalleryContent.map((item, i) => (
             <SwiperSlide key={i}>
-             <motion.div
-              initial={{ opacity: 0 , x:-100}}
-              animate={{ opacity: animate ? 1 : 0 , x: animate?0:-100 }}
-              transition={{ duration: 0.3, delay: 0.3 * i }}
-             >
-              <GalleryCard data={item} key={i} />
-
-             </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: animate ? 1 : 0, x: animate ? 0 : -100 }}
+                transition={{ duration: 0.3, delay: 0.3 * i }}
+              >
+                <GalleryCard data={item} key={i} />
+              </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -129,8 +130,12 @@ export default Gallery;
 const GalleryCard = ({ data }) => {
   return (
     <div className="w-[320px] md:w-[508px]">
-      <div>
-        <img src={data.image} className="w-full md:h-[293px]" alt="" />
+      <div className="md:h-[293px] h-[184px] rounded-[12px] overflow-hidden flex justify-center items-center">
+        <img
+          src={data.image}
+          className="w-full h-full object-cover object-center"
+          alt=""
+        />
       </div>
       <div className="pt-[22px] md:pt-[36px]">
         <h2 className="text-[#323232] text-[20px] md:text-[32px] leading-[40px] font-bold">

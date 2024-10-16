@@ -32,10 +32,34 @@ html {
     transform: rotate(360deg);
   }
 }
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
 
 .rotate-animation {
-  animation: rotate 2s linear infinite; /* Adjust duration and timing as needed */
-  transform-origin: center; /* Ensure it rotates around its center */
+  animation: rotate360 10s linear infinite;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .rotate-animation {
+    animation-duration: 15s; /* Adjust for mobile if needed */
+  }
 }
 
 

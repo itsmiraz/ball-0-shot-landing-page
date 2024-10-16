@@ -15,9 +15,18 @@ import SMOnsiteIcon from "../assets/icons/smOnsiteLogo.svg";
 import SMPartnerShipIcon from "../assets/icons/smPartnerShip.svg";
 import SMOpportunities from "../assets/icons/smOpputuniites.svg";
 
-import partyEvent from "../assets/images/party-event.webp";
-import croudFunding from "../assets/images/croud-funding.webp";
-import charityEvent from "../assets/images/charity-event.webp";
+// import partyEvent from "../assets/images/party-event.webp";
+// import croudFunding from "../assets/images/croud-funding.webp";
+// import charityEvent from "../assets/images/charity-event.webp";
+
+import bougeBougeVerdun from "../assets/images/gallery/10-09-2023-Bouge-Bouge-Verdun.webp"
+import bougeBougeGatineau from "../assets/images/gallery/14-05-2023-Bouge-Bouge-Gatineau.webp"
+import nightOutHalloween2 from "../assets/images/gallery/28-10-2023-NightOut-Halloween.2.webp"
+import bougeBougeFestivalIlePerrot from "../assets/images/gallery/6-05-2023-Bouge-Bouge-Festival-Ile-Perrot.webp"
+import bougeBougeUOttawa from "../assets/images/gallery/24-09-2023-BougeBouge-uOttawa.webp"
+import nightOutHalloween from "../assets/images/gallery/28-10-2023-NightOut-Halloween.webp"
+import touskiVilleDeGatineau from "../assets/images/gallery/19-05-2023-Touski-Ville de Gatineau.webp"
+ 
 
 export const AwardContent = [
   {
@@ -113,59 +122,63 @@ export const AboutExpertise = [
 
 export const GalleryContent = [
   {
-    image: partyEvent,
-    title: "Party Event",
+    image: bougeBougeVerdun,
+    title: "Bouge-Bouge Verdun",
+    date: "10 September 2023",
+  },
+  {
+    image: bougeBougeGatineau,
+    title: "Bouge-Bouge Gatineau",
+    date: "14 May 2023",
+  },
+  {
+    image: nightOutHalloween2,
+    title: "NightOut Halloween.2",
+    date: "28 October 2023",
+  },
+  {
+    image: bougeBougeFestivalIlePerrot,
+    title: "Bouge-Bouge Festival Ile-Perrot",
+    date: "6 May 2023",
+  },
+  {
+    image: bougeBougeUOttawa,
+    title: "Bouge-Bouge uOttawa",
     date: "24 September 2023",
   },
   {
-    image: croudFunding,
-    title: "Crowdfunding",
-    date: "24 September 2023",
+    image: nightOutHalloween,
+    title: "NightOut Halloween",
+    date: "28 October 2023",
   },
   {
-    image: charityEvent,
-    title: "Charity Event",
-    date: "24 September 2023",
-  },
-  {
-    image: croudFunding,
-    title: "Crowdfunding",
-    date: "24 September 2023",
-  },
-  {
-    image: charityEvent,
-    title: "Charity Event",
-    date: "24 September 2023",
+    image: touskiVilleDeGatineau,
+    title: "Touski Ville de Gatineau",
+    date: "19 May 2023",
   },
 ];
 
+
 export const TestimonialsData = [
   {
-    name: "Sarah",
-    badge: "Lacrosse Player",
+    name: "Sarah M.",
+    badge: "Professional Marathon Runner",
     review:
-      "Laxtape is a game-changer! The enhanced grip it offers has greatly improved my ball control on the field. Highly recommend it!",
-    rating: 4,
-  },
-  {
-    name: "Jake",
-    badge: "Coach",
-    review:
-      "I've seen a noticeable improvement in my players' performance since switching to Laxtape. The extra grip and durability make it a top choice for us.",
+      "As a professional marathon runner, staying hydrated is critical, and Ball-O-Shot has been a game changer for me. Its eco-friendly design and quick hydration make it perfect for those intense race moments when every second counts.",
     rating: 5,
   },
   {
-    name: "Emily",
-    badge: "College Athlete",
+    name: "Jake R.",
+    badge: "Soccer Player",
     review:
-      "Laxtape has been amazing for practice and games. It lasts long, feels great, and makes handling the stick much easier. Definitely a must-have!",
+      "Ball-O-Shot makes it so easy to stay hydrated during my training and matches. I love that it's convenient and sustainable, but most importantly, it keeps me going strong during the toughest plays.",
     rating: 5,
   },
   {
-    name: "Ryan",
-    badge: "High School Lacrosse Player",
+    name: "Emma L.",
+    badge: "Environmental Advocate",
     review:
-      "The grip I get with Laxtape is unbeatable. It's improved my game, especially during wet conditions. Love the product!",
-    rating: 4,
+      "As someone passionate about health and sustainability, Ball-O-Shot fits perfectly into my lifestyle. It’s not only a smart way to stay hydrated, but also aligns with my commitment to reducing single-use plastics.",
+    rating: 5,
   }
 ];

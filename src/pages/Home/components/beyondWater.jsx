@@ -33,48 +33,29 @@ const BeyondWater = () => {
     <div id="specs" ref={sectionRef} className="pb-[100px] pt-10">
       <div className="pt-[188px] md:block hidden relative">
         {/* anti-lacing */}
-        {/* <motion.img
+       
+
+        <img
           src={antiLacing}
           className="absolute top-10 left-1/4 max-w-[225px]"
           alt=""
-          animate={{ x: [0, 100, 0], opacity: 1 }} // Move from 0 to 100px and back to 0
-          transition={{ duration: 3, repeat: Infinity, repeatType: "loop" }} // Loop forever
         />
 
-        <motion.img
+        <img
           src={convienence}
-          className="absolute bottom-0 left-0 max-w-[334px]"
+          className="absolute  bottom-0 left-0 max-w-[334px]"
           alt=""
-          animate={{ y: [0, 100, 0], opacity: 1 }} // Move up and down continuously
-          transition={{ duration: 3, repeat: Infinity, repeatType: "loop" }}
-        /> 
-          <motion.img
-          src={ecoFriendly}
-          className="absolute top-20 right-0 max-w-[334px]"
-          alt=""
-          animate={{ x: [0, -100, 0], opacity: 1 }} // Move left and right continuously
-          transition={{ duration: 3, repeat: Infinity, repeatType: "loop" }}
         />
-        
-        */}
 
-        <div className="rotate-animation  absolute pl-10 pb-10 top-10 left-1/4 max-w-[245px]  h-ful">
-          <img src={antiLacing} className="" alt="" />
-        </div>
-
-        <div className="absolute rotate-animation  bottom-0 pr-20 scroll-pb-20 left-0 max-w-[364px] ">
-          <img src={convienence} className="" alt="" />
-        </div>
-        <div className="absolute top-20 rotate-animation right-32 max-w-[334px] pl-20 pb-20  ">
-          <img src={ecoFriendly} className="" alt="" />
-        </div>
-
-        <motion.img
-          src={vegan}
-          className="absolute rotate-animation  -bottom-20 right-0 max-w-[167px]"
+        <img
+          src={ecoFriendly}
+          className="absolute  top-20 right-0 max-w-[334px]"
           alt=""
-          animate={{ y: [0, -100, 0], opacity: 1 }} // Move down and up continuously
-          transition={{ duration: 3, repeat: Infinity, repeatType: "loop" }}
+        />
+        <img
+          src={vegan}
+          className="absolute  -bottom-20 -right-0 max-w-[167px]"
+          alt=""
         />
 
         <img className="mx-auto max-w-[635px]" src={centerBubble} alt="" />

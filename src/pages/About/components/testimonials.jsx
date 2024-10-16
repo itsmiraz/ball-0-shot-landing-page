@@ -131,7 +131,7 @@ export default Testimonials;
 
 const TestimonialCard = ({ data }) => {
   return (
-    <div className="bg-[#FAFAFA] md:h-[265px] md:w-[611px]  py-[32px] px-[24px] rounded-[12px]">
+    <div className="bg-[#FAFAFA] md:h-[345px] md:w-[611px]  py-[32px] px-[24px] rounded-[12px]">
       <div className="flex justify-between items-center">
         <h2 className="text-[21px] md:text-[36px] font-bold text-[#44380F]">
           {data.name}
