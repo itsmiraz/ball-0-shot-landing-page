@@ -74,9 +74,17 @@ const Testimonials = () => {
           modules={[Pagination, Navigation]}
           loop={true}
           breakpoints={{
+            200: {
+              slidesPerView:0.7,
+              spaceBetween: 20,
+            },
+            300: {
+              slidesPerView:0.9,
+              spaceBetween: 20,
+            },
             400: {
-              slidesPerView: 1,
-              spaceBetween: 30,
+              slidesPerView:1,
+              spaceBetween: 20,
             },
             640: {
               slidesPerView: 1,
