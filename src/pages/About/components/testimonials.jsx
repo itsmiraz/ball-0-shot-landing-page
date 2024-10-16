@@ -58,7 +58,7 @@ const Testimonials = () => {
           </button>
         </div>
       </div>
-      <div className="pl-4 md:pl-20">
+      <div className="pl-4  pt-[29px] md:pt-0 md:pl-20">
         <Swiper
           ref={swiperRef}
           pagination={{
@@ -75,8 +75,8 @@ const Testimonials = () => {
           loop={true}
           breakpoints={{
             400: {
-              slidesPerView: 1.2,
-              spaceBetween: 20,
+              slidesPerView: 1,
+              spaceBetween: 30,
             },
             640: {
               slidesPerView: 1,
@@ -91,7 +91,7 @@ const Testimonials = () => {
               spaceBetween: 20,
             },
             1200: {
-              slidesPerView: 1.7,
+              slidesPerView: 1.9,
               spaceBetween: 20,
             },
             1400: {
@@ -104,9 +104,14 @@ const Testimonials = () => {
               spaceBetween: 20,
             },
             1600: {
-              slidesPerView: 2.6,
+              slidesPerView: 2.3,
               spaceBetween: 20,
             },
+            1800: {
+              slidesPerView: 2.8,
+              spaceBetween: 20,
+            },
+          
           }}
           className="mySwiper "
         >
@@ -131,7 +136,7 @@ export default Testimonials;
 
 const TestimonialCard = ({ data }) => {
   return (
-    <div className="bg-[#FAFAFA] md:h-[345px] md:w-[611px]  py-[32px] px-[24px] rounded-[12px]">
+    <div className="bg-[#FAFAFA] md:h-[345px] w-[350px] md:w-[611px]  py-[32px] px-[24px] rounded-[12px]">
       <div className="flex justify-between items-center">
         <h2 className="text-[21px] md:text-[36px] font-bold text-[#44380F]">
           {data.name}

@@ -21,7 +21,7 @@ const Expertise = () => {
     <div
     ref={sectionRef}
       id="service"
-      className="pt-[89px] flex justify-center md:flex-row flex-col gap-x-[31px]"
+      className="pt-[89px] flex justify-center md:flex-row flex-col gap-y-[26px]  gap-x-[31px]"
     >
       {AboutExpertise.map((item, i) => (
         <motion.div

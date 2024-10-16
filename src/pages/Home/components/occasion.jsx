@@ -36,7 +36,25 @@ const Occasion = () => {
 
   // State to control whether animations should play
   const [animate, setAnimate] = useState(false);
+  const [isCentered, setIsCentered] = useState(true);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setIsCentered(false); // Disable centeredSlides on large devices
+      } else {
+        setIsCentered(true); // Enable centeredSlides on mobile
+      }
+    };
+
+    // Call the function on component mount and on window resize
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initialize the state on component mount
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Clean up event listener on unmount
+    };
+  }, []);
   useEffect(() => {
     if (inView) {
       setAnimate(true);
@@ -85,7 +103,7 @@ const Occasion = () => {
             nextEl: ".right-arrow",
             prevEl: ".left-arrow",
           }}
-          centeredSlides={true}
+          centeredSlides={isCentered}
           modules={[Pagination, Navigation]}
           loop={true}
           breakpoints={{

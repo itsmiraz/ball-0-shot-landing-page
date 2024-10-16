@@ -30,7 +30,7 @@ const BeyondWater = () => {
   // Use the useInView hook to track the visibility of the section
   // const isInView = useInView(sectionRef, { once: true });
   return (
-    <div id="specs" ref={sectionRef} className="pb-[100px] pt-10">
+    <div id="specs" ref={sectionRef} className="pb-[100px] pt-[45px]">
       <div className="pt-[188px] md:block hidden relative">
         {/* anti-lacing */}
        
