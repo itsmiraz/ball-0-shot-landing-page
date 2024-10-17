@@ -39,7 +39,7 @@ const Awards = () => {
             Ball-O-Shot.
           </p>
         </div>
-        <div className="flex md:pt-0 pt-[32px] gap-x-6 items-center">
+        <div className="hidden md:flex    md:pt-0 pt-[32px] gap-x-6 items-center">
           <button className="md:w-[57px] w-[40px]" onClick={handleLeftClick}>
             <LeftArrow />
           </button>
@@ -65,24 +65,28 @@ const Awards = () => {
           modules={[Pagination, Navigation]}
           loop={true}
           breakpoints={{
-            400: {
+            300: {
               slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            400: {
+              slidesPerView: 1.3,
               spaceBetween: 20,
             },
             640: {
-              slidesPerView: 1,
+              slidesPerView: 2,
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 1.2,
+              slidesPerView: 1.5,
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 1.4,
+              slidesPerView: 1.6,
               spaceBetween: 20,
             },
             1200: {
-              slidesPerView: 1.5,
+              slidesPerView: 1.7,
               spaceBetween: 20,
             },
             1400: {
@@ -108,6 +112,14 @@ const Awards = () => {
           ))}
         </Swiper>
       </div>
+      <div className="md:hidden flex  px-[22px] md:pt-0 pt-[32px] gap-x-6 items-center">
+          <button className="md:w-[57px] w-[40px]" onClick={handleLeftClick}>
+            <LeftArrow />
+          </button>
+          <button className="md:w-[57px] w-[40px]" onClick={handleRightClick}>
+            <RightArrow />
+          </button>
+        </div>
     </div>
   );
 };

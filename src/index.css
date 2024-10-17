@@ -74,5 +74,5 @@ html {
 }
 
 .slow-spin {
-  animation: slowSpin 4s linear infinite;
+  animation: slowSpin 8s linear infinite;
 }

@@ -1,4 +1,4 @@
-import heroBallImage from "../../../assets/images/rounded-ball.png";
+import heroBallImage from "../../../assets/images/rounded-ball.webp";
 import GrayDot from "../../../assets/icons/grayDot.svg";
 import GofundMe from "../../../assets/icons/goFundme.svg";
 // import LB from "../../../components/ui/lineBreak";
@@ -65,27 +65,10 @@ const Hero = () => {
         <img
           className="mx-auto slow-spin   w-[350px] md:w-[767px] -translate-y-80  md:-translate-y-40 "
           src={heroBallImage}
+          loading="lazy"
           alt="hero-image"
         />
-        {/* <img className="mx-auto  md:hidden block " src={MobileHeroBall} alt="hero-image" /> */}
-
-        {/* <div className="px-20 transform w-full left-1/2 -translate-x-1/2 py-[26px]  md:py-[35px] absolute bottom-0 bg-[#FFFFFFB2] border-[#FFFFFF] backdrop-blur-sm">
-        <ul className="flex justify-between items-center">
-          {expertise.map((item, i) => (
-            <li key={i} className=" flex items-center">
-              <p className="text-[21px] md:text-[18px] xl:text-[28px] whitespace-nowrap font-medium leading-[26px] md:leading-[35px]">{item}</p>
-              <div>
-                {" "}
-                {i + 1 < expertise.length && (
-                  <div className="px-[43px]">
-                    <GrayDot />
-                  </div>
-                )}
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div> */}
+     
         <div className="overflow-hidden absolute bottom-0 w-full py-[26px] md:py-[35px] bg-[#FFFFFFB2] backdrop-blur-sm border-[#FFFFFF]">
           <motion.div
             className="flex space-x-10 w-[200%]" // Make the container double the width to accommodate duplication

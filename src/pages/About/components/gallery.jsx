@@ -46,7 +46,7 @@ const Gallery = () => {
         <h2 className="text-[24px] md:text-[40px] font-bold text-[#323232s]">
           Gallery
         </h2>
-        <div className="gap-x-[21px]  flex items-center">
+        <div className="gap-x-[21px] hidden  md:flex items-center">
           <button className="md:w-[80px] w-[34px]" onClick={handleLeftClick}>
             <LeftArrow />
           </button>
@@ -121,6 +121,15 @@ const Gallery = () => {
           ))}
         </Swiper>
       </div>
+      <div className="gap-x-[21px] flex justify-center pt-5   md:hidden items-center">
+          <button className="md:w-[80px] w-[34px]" onClick={handleLeftClick}>
+            <LeftArrow />
+          </button>
+
+          <button className="md:w-[80px] w-[34px]" onClick={handleRightClick}>
+            <RightArrow />
+          </button>
+        </div>
     </div>
   );
 };

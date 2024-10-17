@@ -60,7 +60,7 @@ const EcoSolutions = () => {
         variants={slideAnimation("right")}
         className="w-[100%] md:w-[50%]"
       >
-        <img className="w-full" src={explodedImage} alt="" />
+        <img className="w-full" loading="lazy" src={explodedImage} alt="" />
       </motion.div>
     </div>
   );

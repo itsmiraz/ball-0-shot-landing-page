@@ -48,7 +48,7 @@ const Testimonials = () => {
         <h2 className="text-[24px] md:text-[36px] font-bold text-[#323232s]">
           Testimonial
         </h2>
-        <div className="gap-x-[21px] flex items-center">
+        <div className="gap-x-[21px] md:flex hidden items-center">
           <button className="md:w-[80px] w-[32px]" onClick={handleLeftClick}>
             <LeftArrow />
           </button>
@@ -136,6 +136,15 @@ const Testimonials = () => {
           ))}
         </Swiper>
       </div>
+      <div className="gap-x-[21px]  justify-center pt-4 flex  md:hidden items-center">
+          <button className="md:w-[80px] w-[32px]" onClick={handleLeftClick}>
+            <LeftArrow />
+          </button>
+
+          <button className="md:w-[80px] w-[32px]" onClick={handleRightClick}>
+            <RightArrow />
+          </button>
+        </div>
     </div>
   );
 };
