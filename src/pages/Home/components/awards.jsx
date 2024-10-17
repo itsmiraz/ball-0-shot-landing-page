@@ -40,10 +40,10 @@ const Awards = () => {
           </p>
         </div>
         <div className="hidden md:flex    md:pt-0 pt-[32px] gap-x-6 items-center">
-          <button className="md:w-[57px] w-[40px]" onClick={handleLeftClick}>
+          <button  aria-label="Scroll left" className="md:w-[57px] w-[40px]" onClick={handleLeftClick}>
             <LeftArrow />
           </button>
-          <button className="md:w-[57px] w-[40px]" onClick={handleRightClick}>
+          <button aria-label="Scroll Right" className="md:w-[57px] w-[40px]" onClick={handleRightClick}>
             <RightArrow />
           </button>
         </div>
@@ -113,10 +113,10 @@ const Awards = () => {
         </Swiper>
       </div>
       <div className="md:hidden flex  px-[22px] md:pt-0 pt-[32px] gap-x-6 items-center">
-          <button className="md:w-[57px] w-[40px]" onClick={handleLeftClick}>
+          <button aria-label="Scroll left" className="md:w-[57px] w-[40px]" onClick={handleLeftClick}>
             <LeftArrow />
           </button>
-          <button className="md:w-[57px] w-[40px]" onClick={handleRightClick}>
+          <button aria-label="Scroll Right" className="md:w-[57px] w-[40px]" onClick={handleRightClick}>
             <RightArrow />
           </button>
         </div>

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"; // Import useInView from framer-motion
-// import { useRef } from "react"; // Import useRef to create a reference for the section
 import centerBubble from "../../../assets/images/center-bubbles.webp";
 import antiLacing from "../../../assets/images/anti-lacing.webp";
 import convienence from "../../../assets/images/convienence.webp";

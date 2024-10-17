@@ -146,10 +146,10 @@ const Occasion = () => {
         </Swiper>
       </motion.div>
       <div className="flex justify-center items-center gap-x-6">
-        <button onClick={handleLeftClick}>
+        <button aria-label="Scroll left" onClick={handleLeftClick}>
           <LeftArrowFil />
         </button>
-        <button onClick={handleRightClick}>
+        <button aria-label="Scroll Right" onClick={handleRightClick}>
           <RightArrowFil />
         </button>
       </div>

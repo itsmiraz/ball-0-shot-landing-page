@@ -23,19 +23,19 @@ const Clients = () => {
       <div className="md:block hidden space-y-[65px] pt-[59px]">
         <div className="flex justify-center items-center gap-x-[18px] md:gap-x-[37px]">
         {clientsRow1.map((item, i) => (
-          <img className="md:max-w-fit max-w-[79px] md:max-h-fit max-h-[41px]" src={item} key={i} />
+          <img alt="clients" className="md:max-w-fit max-w-[79px] md:max-h-fit max-h-[41px]" src={item} key={i} />
         ))}
         </div>
        <div className="flex justify-center items-center gap-x-[33px] md:gap-x-[93px]">
        {clientsRow2.map((item, i) => (
-          <img className="md:max-w-fit max-w-[79px] md:max-h-fit max-h-[41px]" src={item} key={i} />
+          <img alt="clients" className="md:max-w-fit max-w-[79px] md:max-h-fit max-h-[41px]" src={item} key={i} />
         ))}
        </div>
       </div>
       <div className="md:hidden block  space-y-[65px] pt-[59px]">
         <div className="flex flex-wrap px-5 justify-center items-center gap-y-[65px] gap-x-[20px] md:gap-x-[37px]">
         {allClients.map((item, i) => (
-          <img className="md:max-w-fit max-w-[79px] md:max-h-fit max-h-[41px]" src={item} key={i} />
+          <img alt="client" className="md:max-w-fit max-w-[79px] md:max-h-fit max-h-[41px]" src={item} key={i} />
         ))}
         </div>
     

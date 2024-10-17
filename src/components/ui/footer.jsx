@@ -16,15 +16,15 @@ const Footer = () => {
 
   const Details = [
     {
-      icon: <MailIcon/>,
+      icon: <MailIcon />,
       title: "+1 (819) 230-1834",
     },
     {
-      icon: <LocationIcon/>,
+      icon: <LocationIcon />,
       title: "Canada, QC",
     },
     {
-      icon: <MailIcon/>,
+      icon: <MailIcon />,
       title: "info@balloshot.com",
     },
   ];
@@ -34,18 +34,15 @@ const Footer = () => {
 
       <div className="flex gap-x-[20px] text-2xl text-gray-700 md:gap-x-[10px] justify-center items-center pt-[33px] pb-[37px]">
         {/* {navLinks.map((item, i) => ( */}
-          <Link to={"/"} >
-            {" "}
-            <FaTiktok />
-          </Link>
-          <Link to={"/"} >
-            {" "}
-            <FaInstagram />
-          </Link>
-          <Link to={"/"} >
-            {" "}
-            <FaFacebook />
-          </Link>
+        <Link to={"/"} aria-label="TikTok">
+          <FaTiktok />
+        </Link>
+        <Link to={"/"} aria-label="Instagram">
+          <FaInstagram />
+        </Link>
+        <Link to={"/"} aria-label="Facebook">
+          <FaFacebook />
+        </Link>
         {/* ))} */}
       </div>
 
@@ -58,7 +55,9 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <p className="text-[#2B2B2B] text-center text-[14px] ">Ball-O-Shot Copyright 2024 ©</p>
+      <p className="text-[#2B2B2B] text-center text-[14px] ">
+        Ball-O-Shot Copyright 2024 ©
+      </p>
     </div>
   );
 };
