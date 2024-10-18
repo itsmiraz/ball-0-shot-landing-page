@@ -24,14 +24,14 @@ const EcoSolutions = () => {
     <div
       id="about"
       ref={sectionRef}
-      className="px-5 md:px-20 max-w-[1527px] mx-auto pt-[109px] justify-between flex md:flex-row flex-col-reverse gap-[23px] md:gap-20 items-center"
+      className="px-5 lg:px-20 max-w-[1527px] mx-auto pt-[109px] justify-between flex lg:flex-row flex-col-reverse gap-[23px] md:gap-20 items-center"
     >
       <motion.div
         initial="initial"
         animate={animate ? "animate" : "initial"}
         exit="exit"
         variants={slideAnimation("left")}
-        className="w-[95%] md:w-[50%]"
+        className="w-[95%] lg:pl-20 ,d:w-[70%] lg:w-[50%]"
       >
         <p className="text-[18px] leading-[20px] md:text-start text-center md:text-[24px] text-[#5D5D5D] font-medium md:leading-[30.24px]">
           Eco Friendly Water Tap
@@ -58,7 +58,7 @@ const EcoSolutions = () => {
         animate={animate ? "animate" : "initial"}
         exit="exit"
         variants={slideAnimation("right")}
-        className="w-[100%] md:w-[50%]"
+        className="w-[100%] md:w-[65%] lg:w-[50%]"
       >
         <img className="w-full" loading="lazy" src={explodedImage} alt="" />
       </motion.div>

@@ -26,7 +26,7 @@ const Awards = () => {
     }
   };
   return (
-    <div id="awards" className="py-[72px] px-20">
+    <div id="awards" className="py-[72px] lg:px-20">
       <div className="flex md:flex-row flex-col justify-between px-[22px] md:px-10">
         <div>
           <h2 className="text-[#493D14] text-[24px] md:text-[36px] font-bold">
@@ -49,7 +49,7 @@ const Awards = () => {
         </div>
       </div>
 
-      <div className="pl-[22px] md:pl-10 pt-[55px] ">
+      <div className="pl-[22px] lg:pl-10 pt-[55px] ">
         <Swiper
           ref={swiperRef}
           pagination={{
@@ -78,7 +78,7 @@ const Awards = () => {
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 1.5,
+              slidesPerView: 1.1,
               spaceBetween: 40,
             },
             1024: {

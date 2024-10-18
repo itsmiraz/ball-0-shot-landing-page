@@ -58,7 +58,7 @@ const Testimonials = () => {
           </button>
         </div>
       </div>
-      <div className="pl-4  pt-[29px] md:pt-0 md:pl-20">
+      <div className="pl-4  pt-[29px] md:pt-0 md:pl-[95px]">
         <Swiper
           ref={swiperRef}
           pagination={{

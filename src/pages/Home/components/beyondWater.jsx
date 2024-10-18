@@ -26,7 +26,7 @@ const BeyondWater = () => {
 
   return (
     <div id="specs" ref={sectionRef} className="pb-[100px] max-w-[1527px] mx-auto  px-20 pt-[45px]">
-      <div className="pt-[188px] md:block hidden relative">
+      <div className="pt-[188px] lg:block hidden relative">
         {/* anti-lacing */}
 
         <img
@@ -55,7 +55,7 @@ const BeyondWater = () => {
         <img className="mx-auto max-w-[635px]" src={centerBubble} alt="" />
       </div>
 
-      <div className="md:hidden block mx-auto">
+      <div className="lg:hidden block mx-auto">
         <CenterBubbleForMobile />
       </div>
       {/* <img

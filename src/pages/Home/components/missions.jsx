@@ -19,7 +19,7 @@ useEffect(() => {
 }, [inView]);
  
   return (
-    <div id='mission' ref={sectionRef} className="pt-10 pb-[82px] md:px-20 px-2.5"> 
+    <div id='mission' ref={sectionRef} className="pt-10 pb-[82px] md:px-[88px] px-2.5"> 
        <motion.div 
        
        initial="initial"

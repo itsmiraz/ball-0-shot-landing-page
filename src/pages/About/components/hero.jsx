@@ -29,7 +29,7 @@ const Hero = () => {
         animate={animate ? "animate" : "initial"}
         exit="exit"
         variants={slideAnimation("up")}
-        className="px-4 md:pl-20"
+        className="px-4 md:pl-[95px]"
       >
         <h1 className="text-[#282828] md:text-start text-center  relative z-20 leading-[35px] md:leading-[60px] text-[28px] md:text-[48px] font-bold">
           Own the Experience with Ball-O-Shot

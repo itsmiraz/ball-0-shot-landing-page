@@ -72,7 +72,7 @@ const History = () => {
 
       <div
         ref={animateRef}
-        className="pt-[88px]  hidden max-w-[1265px] mx-auto md:flex justify-center gap-x-[74px]"
+        className="pt-[88px]  hidden max-w-[1265px] mx-auto lg:flex justify-center gap-x-[74px]"
       >
         {/* left section */}
         <div className="w-fit">
@@ -211,7 +211,7 @@ const History = () => {
 
       <div
         ref={sectionRef}
-        className="flex md:hidden  justify-center pt-[40px] px-[10px] gap-x-[14px] "
+        className="flex lg:hidden  justify-center pt-[40px] px-[10px] gap-x-[14px] "
       >
         <div className="md:h-[850px] h-[740px]  relative w-[47px] flex justify-center items-center">
           {/* step */}

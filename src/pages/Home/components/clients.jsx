@@ -20,7 +20,7 @@ const Clients = () => {
     <div className="py-[40px] md:py-[58px]">
       <h2 className="text-[24px] md:text-[36px] font-bold text-[#282828] text-center leading-[45px]">Our Best Client</h2>
       <p className="text-[16px] md:text-[24px] text-center">We Work With Many Instituotion And Coorporate</p>
-      <div className="md:block hidden space-y-[65px] pt-[59px]">
+      <div className="lg:block hidden space-y-[65px] pt-[59px]">
         <div className="flex justify-center items-center gap-x-[18px] md:gap-x-[37px]">
         {clientsRow1.map((item, i) => (
           <img alt="clients" className="md:max-w-fit max-w-[79px] md:max-h-fit max-h-[41px]" src={item} key={i} />
@@ -32,7 +32,7 @@ const Clients = () => {
         ))}
        </div>
       </div>
-      <div className="md:hidden block  space-y-[65px] pt-[59px]">
+      <div className="lg:hidden block  space-y-[65px] pt-[59px]">
         <div className="flex flex-wrap px-5 justify-center items-center gap-y-[65px] gap-x-[20px] md:gap-x-[37px]">
         {allClients.map((item, i) => (
           <img alt="client" className="md:max-w-fit max-w-[79px] md:max-h-fit max-h-[41px]" src={item} key={i} />
