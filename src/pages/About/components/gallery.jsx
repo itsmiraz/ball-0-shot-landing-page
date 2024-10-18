@@ -74,7 +74,7 @@ const Gallery = () => {
           </button>
         </div>
       </div>
-      <div className="pl-4 md:pl-[95px] pt-10">
+      <div className="pl-[22px] md:pl-[95px] pt-10">
         <Swiper
           ref={swiperRef}
           pagination={{
