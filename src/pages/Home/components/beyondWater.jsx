@@ -25,7 +25,7 @@ const BeyondWater = () => {
   }, [inView]);
 
   return (
-    <div id="specs" ref={sectionRef} className="pb-[100px] max-w-[1527px] mx-auto  px-20 pt-[45px]">
+    <div id="specs" ref={sectionRef} className="pb-[100px] max-w-[1527px] mx-auto px-4  lg:px-20 pt-[45px]">
       <div className="pt-[188px] lg:block hidden relative">
         {/* anti-lacing */}
 
