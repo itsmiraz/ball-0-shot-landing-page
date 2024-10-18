@@ -109,7 +109,7 @@ const Gallery = () => {
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 1.4,
+              slidesPerView: 1.9,
               spaceBetween: 20,
             },
             1200: {
@@ -117,11 +117,11 @@ const Gallery = () => {
               spaceBetween: 20,
             },
             1400: {
-              slidesPerView: 2.7,
+              slidesPerView: 2.3,
               spaceBetween: 20,
             },
             1600: {
-              slidesPerView: 3.1,
+              slidesPerView: 2.9,
               spaceBetween: 20,
             },
           }}
