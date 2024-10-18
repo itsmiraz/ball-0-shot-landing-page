@@ -5,20 +5,17 @@ import convienence from "../../../assets/images/convienence.webp";
 import ecoFriendly from "../../../assets/images/eco-friendly.webp";
 import vegan from "../../../assets/images/vegan.webp";
 import LB from "../../../components/ui/lineBreak";
-import CenterBubblesMobile from "../../../assets/images/mobile-bubbles-image.webp";
+// import CenterBubblesMobile from "../../../assets/images/mobile-bubbles-image.webp";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import { slideAnimation } from "../../../lib/motion";
-
+import CenterBubbleForMobile from "../../../assets/icons/BeyondWaterCenterBubble.svg";
 const BeyondWater = () => {
-  // Create a ref for the section
-  // const sectionRef = useRef(null);
   const [sectionRef, inView] = useInView({
     triggerOnce: true, // Trigger animation once when it enters the viewport
     threshold: 0.2, // Adjust this threshold as needed
   });
 
-  // State to control whether animations should play
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -26,13 +23,11 @@ const BeyondWater = () => {
       setAnimate(true);
     }
   }, [inView]);
-  // Use the useInView hook to track the visibility of the section
-  // const isInView = useInView(sectionRef, { once: true });
+
   return (
-    <div id="specs" ref={sectionRef} className="pb-[100px] pt-[45px]">
+    <div id="specs" ref={sectionRef} className="pb-[100px] max-w-[1527px] mx-auto  px-20 pt-[45px]">
       <div className="pt-[188px] md:block hidden relative">
         {/* anti-lacing */}
-       
 
         <img
           src={antiLacing}
@@ -60,11 +55,14 @@ const BeyondWater = () => {
         <img className="mx-auto max-w-[635px]" src={centerBubble} alt="" />
       </div>
 
-      <img
+      <div className="md:hidden block mx-auto">
+        <CenterBubbleForMobile />
+      </div>
+      {/* <img
         className="md:hidden block mx-auto"
         src={CenterBubblesMobile}
         alt=""
-      />
+      /> */}
       <motion.div
         initial="initial"
         animate={animate ? "animate" : "initial"}

@@ -24,7 +24,7 @@ const EcoSolutions = () => {
     <div
       id="about"
       ref={sectionRef}
-      className="px-5 md:px-20 pt-[109px] justify-between flex md:flex-row flex-col-reverse gap-[23px] md:gap-20 items-center"
+      className="px-5 md:px-20 max-w-[1527px] mx-auto pt-[109px] justify-between flex md:flex-row flex-col-reverse gap-[23px] md:gap-20 items-center"
     >
       <motion.div
         initial="initial"

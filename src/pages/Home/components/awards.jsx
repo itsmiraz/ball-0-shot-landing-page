@@ -26,7 +26,7 @@ const Awards = () => {
     }
   };
   return (
-    <div id="awards" className="py-[72px]">
+    <div id="awards" className="py-[72px] px-20">
       <div className="flex md:flex-row flex-col justify-between px-[22px] md:px-10">
         <div>
           <h2 className="text-[#493D14] text-[24px] md:text-[36px] font-bold">
@@ -70,7 +70,7 @@ const Awards = () => {
               spaceBetween: 20,
             },
             400: {
-              slidesPerView: 1.3,
+              slidesPerView: 1,
               spaceBetween: 20,
             },
             640: {
@@ -99,7 +99,7 @@ const Awards = () => {
               spaceBetween: 20,
             },
             1800: {
-              slidesPerView: 2.4,
+              slidesPerView: 2.7,
               spaceBetween: 20,
             },
           }}
@@ -127,19 +127,19 @@ const Awards = () => {
 export default Awards;
 const AwardCard = ({ data }) => {
   return (
-    <div className="bg-[#F8F8F8] cursor-pointer rounded-[20px] pt-[26px] md:pt-[53px] pb-[20px] md:pb-[40px] px-[15px] md:px-[30px] w-[308px] h-[258px] md:h-[480px] md:w-[700px]">
+    <div className="bg-[#F8F8F8] cursor-pointer rounded-[20px] pt-[26px] md:pt-[53px] pb-[20px] md:pb-[40px] px-[15px] md:px-[30px] w-[348px] h-[258px] md:h-[390px] md:w-[600px]">
       <div>
         <img
-          className="md:max-w-fit md:max-h-[133px] max-h-[83px] max-w-[133px] md:w-[223px]"
+          className="md:max-w-fit md:max-h-[103px] max-h-[83px] max-w-[133px] md:w-[223px]"
           src={data.img}
           alt=""
         />
       </div>
       <div className="w-full mt-5">
-        <h2 className="text-[#282828] text-[18px] md:text-[36px] font-bold">
+        <h2 className="text-[#282828] text-[18px] md:text-[32px] font-bold">
           {data.title}
         </h2>
-        <p className="text-[12px] md:text-[24px]">{data.desc}</p>
+        <p className="text-[12px] md:text-[20px]">{data.desc}</p>
         <p className="pt-[19px] md:pt-[39px] text-[12px] md:text-[24px]">
           {data.code}
         </p>

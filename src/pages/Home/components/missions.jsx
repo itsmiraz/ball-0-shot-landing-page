@@ -19,7 +19,7 @@ useEffect(() => {
 }, [inView]);
  
   return (
-    <div id='mission' ref={sectionRef} className="pt-10 pb-[82px] px-[10px]"> 
+    <div id='mission' ref={sectionRef} className="pt-10 pb-[82px] md:px-20 px-2.5"> 
        <motion.div 
        
        initial="initial"
@@ -30,7 +30,7 @@ useEffect(() => {
        <h2 className=" text-[24px] md:text-[40px] font-bold text-[#FFFFFF] pb-4">
         Our Mission
         </h2>
-        <p className="text-[16px] md:text-[30px] md:text-center text-start md:tracking-[3%] leading-[21px] md:leading-[37px] text-white">  
+        <p className="text-[16px] md:text-[30px] text-center  md:tracking-[3%] leading-[21px] md:leading-[37px] text-white">  
         Our goal is to lead the beverage industry with Ball-O-Shot as a staple at events worldwide. Through innovation and constant refinement, we aim to deliver a premium product that meets the highest standards of quality and <LB/> sustainability.
         </p>
        </motion.div>

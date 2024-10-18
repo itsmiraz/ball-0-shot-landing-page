@@ -10,57 +10,47 @@ const Header = () => {
     <div className="flex md:flex-row flex-col justify-center items-center">
       <ul className=" hidden md:flex items-center justify-center gap-x-10 ">
         <li>
-          <Link to={'/#about'}>
-          <p className="text-[20px] leading-[25px]">About</p>
+          <Link to={"/#about"}>
+            <p className="text-[20px] leading-[25px]">About</p>
           </Link>
         </li>
         <li>
-       <Link to={'/#specs'}>
-       <p className="text-[20px] leading-[25px]">Specs</p>
-       </Link>
+          <Link to={"/#specs"}>
+            <p className="text-[20px] leading-[25px]">Specs</p>
+          </Link>
         </li>
         <li>
-       <Link to={'/#mission'}>
-          <p className="text-[20px] leading-[25px]">Mission</p>
-       </Link>
-
+          <Link to={"/#mission"}>
+            <p className="text-[20px] leading-[25px]">Mission</p>
+          </Link>
         </li>
         <li>
-       <Link to={"/"}>
-       
-          <img className="max-w-[130px]" src={logo} alt="ball-0-shot-logo" />
-       
-       </Link>
-          
+          <Link to={"/"}>
+            <img className="max-w-[130px]" src={logo} alt="ball-0-shot-logo" />
+          </Link>
         </li>
         <li>
-       <Link to={'/#history'}>
-         
-          <p className="text-[20px] leading-[25px]">History</p>
-       </Link>
+          <Link to={"/#history"}>
+            <p className="text-[20px] leading-[25px]">History</p>
+          </Link>
         </li>
         <li>
-       <Link to={'/#events'}>
-       
-          <p className="text-[20px] leading-[25px]">Events</p>
-       </Link>
-         
+          <Link to={"/#events"}>
+            <p className="text-[20px] leading-[25px]">Events</p>
+          </Link>
         </li>
         <li>
-       <Link to={'/#awards'}>
-          <p className="text-[20px] leading-[25px]">Certificate</p>
-       
-       </Link>
-
+          <Link to={"/#awards"}>
+            <p className="text-[20px] leading-[25px]">Certificate</p>
+          </Link>
         </li>
       </ul>
       <div className="md:hidden  block sticky top-0 w-full">
         <div className="relative flex border-b border-[#F2F4F7] py-[17px] px-[20px] w-full justify-between">
           <div>
-       <Link to={"/"}>
-            <img className="max-w-[89px]" src={logo} alt="" />
-       </Link>
-         
+            <Link to={"/"}>
+              <img className="max-w-[89px]" src={logo} alt="" />
+            </Link>
           </div>
           {/* menu */}
 
@@ -78,24 +68,34 @@ const Header = () => {
         >
           <ul className="grid gap-[18px] w-full  pl-5 py-6 grid-cols-2 text-[14px] text-[#101828]">
             <li>
-             <Link to='/about'>
-             <p>About</p>
-             </Link>
+              <Link to={"/#about"}>
+                <p>About</p>
+              </Link>
             </li>
             <li>
-              <p>Mission</p>
+              <Link to={"/#mission"}>
+                <p>Mission</p>
+              </Link>
             </li>
             <li>
-              <p>Specs</p>
+              <Link to={"/#specs"}>
+                <p>Specs</p>
+              </Link>
             </li>
             <li>
-              <p>History</p>
+              <Link to={"/#history"}>
+                <p>History</p>
+              </Link>
             </li>
             <li>
-              <p>Events</p>
+              <Link to={"/#events"}>
+                <p>Events</p>
+              </Link>
             </li>
             <li>
-              <p>Certificate</p>
+              <Link to={"/#awards"}>
+                <p>Certificate</p>
+              </Link>
             </li>
           </ul>
         </div>

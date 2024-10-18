@@ -182,24 +182,30 @@ export const GalleryContent = [
 
 export const TestimonialsData = [
   {
-    name: "Sarah M.",
-    badge: "Professional Marathon Runner",
+    name: "Timothé S.",
+    badge: "Event Organizer",
     review:
-      "As a professional marathon runner, staying hydrated is critical, and Ball-O-Shot has been a game changer for me. Its eco-friendly design and quick hydration make it perfect for those intense race moments when every second counts.",
+      "Product is just as advertised. Very good flavour options as well 👍 It's a great way to boost any event to the next level as its innovative, delicious and eye-catching.",
+    rating: 5, // You can add ratings based on the same scale, assuming 5 is the highest
+  },
+  {
+    name: "Adam C.",
+    badge: "Marathon Runner",
+    review:
+      "Great event! A new innovative way to get hydrated that is green!",
     rating: 5,
   },
   {
-    name: "Jake R.",
-    badge: "Soccer Player",
-    review:
-      "Ball-O-Shot makes it so easy to stay hydrated during my training and matches. I love that it's convenient and sustainable, but most importantly, it keeps me going strong during the toughest plays.",
-    rating: 5,
+    name: "Joshua B.",
+    badge: "Festival Goer",
+    review: "I tried it at a festival, excellent product.",
+    rating: 4, // Example: You can give a rating here if needed
   },
   {
-    name: "Emma L.",
-    badge: "Environmental Advocate",
+    name: "Soumik D.",
+    badge: "Fitness Enthusiast",
     review:
-      "As someone passionate about health and sustainability, Ball-O-Shot fits perfectly into my lifestyle. It’s not only a smart way to stay hydrated, but also aligns with my commitment to reducing single-use plastics.",
+      "Ball-O-Shot is a game-changer! It’s a super convenient, eco-friendly beverage shot encased in a biodegradable ball. Highly recommend for anyone looking for something unique and practical!",
     rating: 5,
-  }
+  },
 ];

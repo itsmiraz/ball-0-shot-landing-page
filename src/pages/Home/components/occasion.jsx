@@ -71,7 +71,7 @@ const Occasion = () => {
         backgroundPosition: "center", // Centers the image
         backgroundRepeat: "no-repeat", // Prevents repeating the background image
       }}
-      className="pt-[95px] pb-[35px]"
+      className="pt-[95px]  pb-[35px]"
     >
       <h2 className="text-[28px] text-white  md:text-[36px] font-bold text-center">
         Perfect Occasion
@@ -89,7 +89,7 @@ const Occasion = () => {
         animate={animate ? "animate" : "initial"}
         exit="exit"
         variants={slideAnimation("up")}
-        className="pl-4 md:pl-10 md:pr-5 pt-[33px] pb-[49px]"
+        className="pl-4 max-w-[1527px] mx-auto md:pl-10 md:pr-5 pt-[33px] pb-[49px]"
       >
         <Swiper
           ref={swiperRef}
@@ -124,15 +124,15 @@ const Occasion = () => {
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 2.5,
+              slidesPerView: 2.4,
               spaceBetween: 30,
             },
             1400: {
-              slidesPerView: 3,
+              slidesPerView: 2.9,
               spaceBetween: 30,
             },
             1600: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 30,
             },
           }}

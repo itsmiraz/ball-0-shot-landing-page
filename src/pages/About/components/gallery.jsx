@@ -39,9 +39,27 @@ const Gallery = () => {
       setAnimate(true);
     }
   }, [inView]);
+  const [isCentered, setIsCentered] = useState(true);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setIsCentered(false); // Disable centeredSlides on large devices
+      } else {
+        setIsCentered(true); // Enable centeredSlides on mobile
+      }
+    };
+
+    // Call the function on component mount and on window resize
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initialize the state on component mount
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Clean up event listener on unmount
+    };
+  }, []);
   return (
-    <div ref={sectionRef} className="pt-[135px] pb-[96px] ">
+    <div ref={sectionRef} className="pt-[135px] pb-[40px] md:pb-[96px] ">
       <div className="flex md:mb-[57px] md:flex-row gap-[22px] flex-col justify-center md:justify-between md:px-20 items-center">
         <h2 className="text-[24px] md:text-[40px] font-bold text-[#323232s]">
           Gallery
@@ -72,6 +90,7 @@ const Gallery = () => {
           }}
           modules={[Pagination, Navigation]}
           //   loop={true}
+          centeredSlides={isCentered}
           breakpoints={{
             350: {
               slidesPerView: 1,
@@ -138,7 +157,7 @@ export default Gallery;
 
 const GalleryCard = ({ data }) => {
   return (
-    <div className="w-[320px] md:w-[508px]">
+    <div className="w-[340px] md:w-[508px]">
       <div className="md:h-[293px] h-[184px] rounded-[12px] overflow-hidden flex justify-center items-center">
         <img
           src={data.image}
