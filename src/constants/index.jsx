@@ -199,7 +199,7 @@ export const TestimonialsData = [
     name: "Joshua B.",
     badge: "Festival Goer",
     review: "I tried it at a festival, excellent product.",
-    rating: 4, // Example: You can give a rating here if needed
+    rating: 5, // Example: You can give a rating here if needed
   },
   {
     name: "Soumik D.",
